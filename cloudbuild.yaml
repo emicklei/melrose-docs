@@ -1,0 +1,6 @@
+tags:
+- melrose
+
+steps:
+- name: 'gcr.io/cloudbuilder/npm'
+  args: ['install']
