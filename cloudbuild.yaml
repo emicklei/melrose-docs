@@ -2,5 +2,10 @@ tags:
 - melrose
 
 steps:
-- name: 'gcr.io/cloudbuilder/npm'
+- id: "install modules"
+  name: 'gcr.io/cloud-builders/npm'
   args: ['install']
+
+- id: "build site"
+  name: 'gcr.io/cloud-builders/npm'
+  args: ['run','build']  
