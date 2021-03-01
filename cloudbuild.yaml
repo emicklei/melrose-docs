@@ -9,3 +9,7 @@ steps:
 - id: "build site"
   name: 'gcr.io/cloud-builders/npm'
   args: ['run','build']  
+
+- id: "update site bucket"
+  name: 'gcr.io/cloud-builder/gsutil'
+  args: ['-m','rsync','-r','public','gs://melrose-static-website']
