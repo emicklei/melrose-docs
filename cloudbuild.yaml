@@ -12,4 +12,4 @@ steps:
 
 - id: "update site bucket"
   name: 'gcr.io/cloud-builders/gsutil'
-  args: ['-m','rsync','-r','-c','public','gs://melrose-static-website']
+  args: ['-m','rsync','-r','-c','public','gs://melrose.ernestmicklei.com']
