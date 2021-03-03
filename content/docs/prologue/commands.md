@@ -1,7 +1,7 @@
 ---
 title: "Commands"
-description: "Doks comes with commands for common tasks."
-lead: "Doks comes with commands for common tasks."
+description: "Melrose comes with commands for common tasks."
+lead: "Melrose comes with commands for common tasks."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -13,94 +13,36 @@ weight: 130
 toc: true
 ---
 
-{{< alert icon="💡" text="You can change the commands in the scripts section of `./package.json`." >}}
+{{< alert icon="💡" text="Commands are used in the terminal in which you started the melrose application" >}}
 
-## start
+## Help
 
-Start local development server:
-
-{{< btn-copy text="npm run start" >}}
+Show all available commands and functions.
 
 ```bash
-npm run start
+:h
 ```
 
-## lint
+## MIDI connectivity
 
-Check scripts, styles, and markdown for errors:
-
-{{< btn-copy text="npm run lint" >}}
+Show all availale input and output devices.
 
 ```bash
-npm run lint
+:m
 ```
 
-### scripts
+### Kill the sounds
 
-Check scripts for errors:
-
-{{< btn-copy text="npm run lint:scripts" >}}
+Abort playing of any music object.
 
 ```bash
-npm run lint:scripts [-- --fix]
+:k
 ```
 
-### styles
+### Exit program
 
-Check styles for errors:
-
-{{< btn-copy text="npm run lint:styles" >}}
+Stop the melrose program and all playing sounds.
 
 ```bash
-npm run lint:styles [-- --fix]
-```
-
-### markdown
-
-Check markdown for errors:
-
-{{< btn-copy text="npm run lint:markdown" >}}
-
-```bash
-npm run lint:markdown [-- --fix]
-```
-
-## clean
-
-Delete temporary directories:
-
-{{< btn-copy text="npm run clean" >}}
-
-```bash
-npm run clean
-```
-
-## build
-
-Build production website:
-
-{{< btn-copy text="npm run build" >}}
-
-```bash
-npm run build
-```
-
-### functions
-
-Build Lambda functions:
-
-{{< btn-copy text="npm run build:functions" >}}
-
-```bash
-npm run build:functions
-```
-
-### preview
-
-Build production website including draft and future content:
-
-{{< btn-copy text="npm run build:preview" >}}
-
-```bash
-npm run build:preview
+:q
 ```
