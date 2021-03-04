@@ -8,7 +8,7 @@ draft: false
 images: []
 menu: 
   docs:
-    parent: "prologue"
+    parent: "beginner"
 weight: 130
 toc: true
 ---
@@ -23,7 +23,7 @@ Show all available commands and functions.
 :h
 ```
 
-## MIDI connectivity
+### MIDI connectivity
 
 Show all availale input and output devices.
 
