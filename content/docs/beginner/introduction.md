@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-description: "Melrōse is both a language and MIDI environment for creating (live) music."
-lead: "Melrōse is both a language and MIDI environment for creating (live) music."
+description: "Melrōse is a MIDI environment for creating (live) music."
+lead: "Melrōse is MIDI environment for creating (live) music."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false

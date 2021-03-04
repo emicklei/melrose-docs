@@ -11,21 +11,32 @@
   url = "/docs/reference/"
 
 [[docs]]
-  name = "🎶 Advanced"
-  weight = 30
-  identifier = "advanced"
-  url = "/docs/advanced/"
-
-[[docs]]
   name = "🎶 Help"
   weight = 60
   identifier = "help"
   url = "/docs/help/"
 
+[[tutorial]]
+  name = "🎶 Basic"
+  weight = 10
+  identifier = "basic"
+  url = "/tutorial/basic/"
+
+[[tutorial]]
+  name = "🎶 Advanced"
+  weight = 20
+  identifier = "advanced"
+  url = "/tutorial/advanced/"
+
 [[main]]
   name = "Docs"
   url = "/docs/beginner/introduction/"
   weight = 10
+
+[[main]]
+  name = "Tutorial"
+  url = "/tutorial/basic/01-note"
+  weight = 15
 
 [[main]]
   name = "Blog"
