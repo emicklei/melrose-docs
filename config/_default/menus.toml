@@ -1,30 +1,30 @@
 [[docs]]
-  name = "Beginner"
+  name = "🎶 Newbies"
   weight = 10
   identifier = "beginner"
   url = "/docs/beginner/"
 
 [[docs]]
-  name = "Reference"
+  name = "🎶 Reference"
   weight = 20
   identifier = "reference"
   url = "/docs/reference/"
 
 [[docs]]
-  name = "Advanced"
+  name = "🎶 Advanced"
   weight = 30
   identifier = "advanced"
   url = "/docs/advanced/"
 
 [[docs]]
-  name = "Help"
+  name = "🎶 Help"
   weight = 60
   identifier = "help"
   url = "/docs/help/"
 
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
+  url = "/docs/beginner/introduction/"
   weight = 10
 
 [[main]]
