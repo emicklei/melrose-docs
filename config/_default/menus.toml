@@ -1,8 +1,8 @@
 [[docs]]
   name = "🎶 Newbies"
   weight = 10
-  identifier = "beginner"
-  url = "/docs/beginner/"
+  identifier = "newbies"
+  url = "/docs/newbies/"
 
 [[docs]]
   name = "🎶 Reference"
@@ -30,7 +30,7 @@
 
 [[main]]
   name = "Docs"
-  url = "/docs/beginner/introduction/"
+  url = "/docs/newbies/introduction/"
   weight = 10
 
 [[main]]

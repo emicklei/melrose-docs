@@ -1,7 +1,7 @@
 ---
 title: 01 Note
 menu:
-  docs:
+  tutorial:
     parent: "basic"
 ---
 

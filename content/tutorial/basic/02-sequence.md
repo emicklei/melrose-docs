@@ -1,8 +1,8 @@
 ---
 title: 02 Sequence
 menu:
-  docs:
-    parent: "advanced"
+  tutorial:
+    parent: "basic"
 ---
 
 ## create a sequence

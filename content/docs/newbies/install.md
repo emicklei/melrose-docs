@@ -8,11 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "beginner"
+    parent: "newbies"
 weight: 110
 toc: true
 ---
-
-## MacOSX how
-
-Help

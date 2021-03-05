@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "beginner"
+    parent: "newbies"
 weight: 100
 toc: true
 ---
