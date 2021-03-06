@@ -1,7 +1,7 @@
 ---
-title: "Iterating over resequence patterns"
-description: ""
-lead: ""
+title: "Iterating over patterns"
+description: "Using loop and resequence to listen to different note patterns."
+lead: "Using loop and resequence to listen to different note patterns."
 date: 2021-03-05T17:28:49+01:00
 lastmod: 2021-03-05T17:28:49+01:00
 draft: false
@@ -22,7 +22,7 @@ m = resequence(i,s)
 l = loop(m,next(i))
 
 {{< / highlight >}}
-<a href="#" onClick="MIDIjs.play('/midi/blog-resequence-iterator.mid');">🎶 Play</a>
+<a href="https://storage.googleapis.com/downloads.ernestmicklei.com/melrose/melrose_drum_pattern-1.aif">🎶 Play</a>
 
 Using `resequence` you can compose a new sequence with index-based entries.
 The first compostion played by the loop is `(C E) (G B)`.

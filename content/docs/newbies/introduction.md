@@ -24,11 +24,25 @@ There are two main ways to get started with Melrōse:
 ### Quick Start
 
 {{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." >}}
-## Go further
+
+### Digital Audio Workstation (DAW)
+
+Melrōse itself does not produce any sound.
+Instead, it sends MIDI messages to connected hardware or software, such as a DAW.
+There are many open-source and commercial products that provide synthesized sounds for many software instruments.
+
+We have tested `melrose` with only a few such products:
+
+- [Using Melrōse with Garageband](https://emicklei.github.io/melrose/garageband.html)
+    - no support for multi-channel tracks
+- Logic Pro X (commercial)
+    - with support for multi-channel tracks
+- FL Studio
+- LMMS
 
 ### Showcase
 
-See what others have created with Melrōse. [Showcase →](https://youtube.com/)
+See what others have created with Melrōse. [Showcase →](https://www.youtube.com/results?search_query=melr%C5%8Dse)
 
 ## Contributing
 
