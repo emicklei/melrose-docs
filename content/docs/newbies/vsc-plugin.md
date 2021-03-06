@@ -15,7 +15,7 @@ toc: true
 
 ### install
 
-See [instructions](/docs/newbies/install/) on how to install this plugin after you have installed Visual Studio Code.
+See [instructions](https://marketplace.visualstudio.com/items?itemName=EMicklei.melrose-for-vscode) on how to install this plugin after you have installed Visual Studio Code.
 
 ### edit
 
@@ -43,7 +43,7 @@ You can also evaluate the function `stop(...)`.
 To inspect a variable or a function, just hover with your mouse pointer above its name.
 To explicitly inspect the value of an expression, use `cmd+2`.
 
-### ⌘+m : Stop all sounds
+### ⌘+k : Stop all sounds
 
 To stop sounds being played, including loops, use `cmd+k`.
 
