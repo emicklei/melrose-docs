@@ -14,14 +14,14 @@ lp = loop(a)
 
 A loop plays one or more musical objects repeatedly.
 The tempo at which the notes of the objects are played is set using the `bpm` function.
-The loop object must be assigned a the variable, here `lp` because the program needs a reference in order to `begin` or `end` the loop.
+The loop object must be assigned a the variable, here `lp` because the program needs a reference in order to `play` or `stop` the loop.
 
 ```javascript
-begin(lp)
-end(lp)
+play(lp)
+stop(lp)
 ```
 
-Using the editor with the plugin, it is much easier to begin a loop using `cmd+4` or `cmd+3` and end it with `cmd+5`.
+Using the editor with the plugin, it is much easier to play a loop using `cmd+3` and stop it with `cmd+5`.
 
 ## pitch loop
 
