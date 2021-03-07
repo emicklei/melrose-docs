@@ -33,9 +33,9 @@ There are many open-source and commercial products that provide synthesized soun
 
 We have tested `melrose` with only a few such products:
 
-- [Using Melrōse with Garageband](https://emicklei.github.io/melrose/garageband.html)
+- [Using Melrōse with Garageband](https://xn--melrse-egb.org/blog/daw-apple-garageband/)
     - no support for multi-channel tracks
-- Logic Pro X (commercial)
+- [Logic Pro X (commercial)](https://xn--melrse-egb.org/blog/daw-apple-logic-pro-x/)
     - with support for multi-channel tracks
 - FL Studio
 - LMMS

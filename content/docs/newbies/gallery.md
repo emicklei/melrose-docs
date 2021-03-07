@@ -16,11 +16,11 @@ toc: true
 ## featured
 
 <iframe id="ytplayer" type="text/html" width="600" height="338"
-  src="https://www.youtube.com/embed/HK9jeAPbi5w?&origin=https://emicklei.github.io"
+  src="https://www.youtube.com/embed/HK9jeAPbi5w?&origin=https://melrōse.org"
   frameborder="0"></iframe>  
     
 ### others
 
-- [Drum patterns](https://www.youtube.com/embed/XpZv5zmPRgw?&origin=https://emicklei.github.io)  
-- [Waimuso](https://www.youtube.com/embed/eKQng09f_Nw?&origin=https://emicklei.github.io)  
-- [Riboluta](https://www.youtube.com/embed/JOwUrs6L-8s?&origin=https://emicklei.github.io) 
+- [Drum patterns](https://www.youtube.com/embed/XpZv5zmPRgw?&origin=https://melrōse.org)  
+- [Waimuso](https://www.youtube.com/embed/eKQng09f_Nw?&origin=https://melrōse.org)  
+- [Riboluta](https://www.youtube.com/embed/JOwUrs6L-8s?&origin=https://melrōse.org) 
