@@ -4,7 +4,7 @@
 title = "Melrōse"
 titleSeparator = "-"
 titleAddition = "Music Programming Language"
-description = "Melrōse is a MIDI producing environment for creating (live) music."
+description = "a MIDI producing environment for creating (live) music."
 
 ## Open Graph + Twitter Cards
 images = ["doks.png"]
