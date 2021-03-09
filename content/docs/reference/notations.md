@@ -4,7 +4,7 @@ title: "Notation"
 description: "Musical object notations."
 lead: "Musical object notations."
 date: 2021-03-05T15:21:01+02:00
-lastmod: 2021-03-05T15:21:01+02:00
+lastmod: 2021-03-09T15:21:01+02:00
 draft: false
 images: []
 menu: 
@@ -16,6 +16,7 @@ toc: true
 
 
 ## Note
+<a name="note"></a>
 
 Format: `(fraction)(dot)(name|=)(accidental)(dynamic)`
 
@@ -37,7 +38,8 @@ Format: `(fraction)(dot)(name|=)(accidental)(dynamic)`
 n = note('c#5')
 ```
 
-## Note dynamics<a name="note-not"></a>
+## Note dynamics
+<a name="dynamics"></a>
 
 | Notation    | Description
 |-------------|---
@@ -57,7 +59,8 @@ n = note('c#5')
 n = note('e++')
 ```
 
-## Sequence<a name="sequence-not"></a>
+## Sequence
+<a name="sequence"></a>
 
 | Notation    | Description
 |-------------|---
@@ -80,7 +83,8 @@ Usable in `sequence` or `note`.
 | ^        | sustain pedal `up` and immediately `down`
 
 
-## Chord<a name="chord-not"></a>
+## Chord
+<a name="chord"></a>
 
 | Notation    | Description
 |-------------|---
@@ -100,7 +104,8 @@ Usable in `sequence` or `note`.
 b7 = chord('b/7')
 ```
 
-## Scale<a name="scale-not"></a>
+## Scale
+<a name="scale"></a>
 
 | Notation    | Description
 |-------------|---
@@ -112,7 +117,8 @@ b7 = chord('b/7')
 sf = scale(2,'f')
 ```
 
-## Chord Progression <a name="progression-not"></a>
+## Chord Progression 
+<a name="progression"></a>
 
 | Notation    | Alternative | Description
 |-------------|--------|--
@@ -125,7 +131,8 @@ sf = scale(2,'f')
 p = progression('C', 'ii V I') // Major C scale, (D F A) (G B D5) (C E G)
 ```
 
-## Chord Sequence <a name="chordsequence-not"></a>
+## Chord Sequence 
+<a name="chordsequence"></a>
 
 | Notation    | Description
 |-------------|---

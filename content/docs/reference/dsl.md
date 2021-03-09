@@ -37,6 +37,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#chordsequence">chordsequence</a>
 - <a href="#midi">midi</a>
 - <a href="#note">note</a>
+- <a href="#progression">progression</a>
 - <a href="#scale">scale</a>
 - <a href="#sequence">sequence</a>
 
@@ -78,7 +79,6 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 
 ## Audio control functions
 
-- <a href="#begin">begin</a>
 - <a href="#biab">biab</a>
 - <a href="#bpm">bpm</a>
 - <a href="#channel">channel</a>
@@ -103,19 +103,6 @@ Create an index getter (1-based) to select a musical object.
 #### examples	
 ```javascript
 at(1,scale('e/m')) // => E
-```
-
-### begin
-<a name="begin"></a>
-Begin loop(s). Ignore if it was running.
-
-> begin(loop)
-
-#### examples	
-```javascript
-lp_cb = loop(sequence('C D E F G A B'))
-
-begin(lp_cb) // end(lp_cb)
 ```
 
 ### biab
@@ -157,7 +144,7 @@ channel(2,sequence('c2 e3')) // plays on instrument connected to MIDI channel 2
 
 ### chord
 <a name="chord"></a>
-Create a Chord from its string <a href="/melrose/notations.html#chord-not">notation</a>.
+Create a Chord from its string <a href="/docs/reference/notations/#chord">format</a>.
 
 > chord('note')
 
@@ -170,7 +157,7 @@ chord('g/M/2') // Major G second inversion
 
 ### chordsequence
 <a name="chordsequence"></a>
-Create a Chord sequence using this <a href="/melrose/notations.html#chordsequence-not">format</a>.
+Create a Chord sequence using this <a href="/docs/reference/notations/#chordsequence">format</a>.
 
 > chordsequence('chords')
 
@@ -406,7 +393,7 @@ Create a new loop from one or more musical objects; must be assigned to a variab
 ```javascript
 cb = sequence('c d e f g a b')
 
-lp_cb = loop(cb,reverse(cb))
+myloop = loop(cb,reverse(cb))
 ```
 
 ### merge
@@ -487,7 +474,7 @@ begin(lp_pi)
 
 ### note
 <a name="note"></a>
-Create a Note using this <a href="/melrose/notations.html#note-not">format</a>.
+Create a Note using this <a href="/docs/reference/notations/#note">format</a>.
 
 > note('letter')
 
@@ -612,6 +599,17 @@ Prints an object when evaluated (play,loop).
 
 ```
 
+### progression
+<a name="progression"></a>
+Create a Chord progression using this <a href="/docs/reference/notations/#chordprogression">format</a>.
+
+> progression('scale','space-separated-roman-chords')
+
+#### examples	
+```javascript
+progression('C','II V I') // => (D F A) (G B D5) (C E G)
+```
+
 ### random
 <a name="random"></a>
 Create a random integer generator. Use next() to generate a new integer.
@@ -694,7 +692,7 @@ reverse(chord('a'))
 
 ### scale
 <a name="scale"></a>
-Create a Scale using this <a href="/melrose/notations.html#scale-not">format</a>.
+Create a Scale using this <a href="/docs/reference/notations/#scale">format</a>.
 
 > scale(octaves,'scale-syntax')
 
@@ -705,7 +703,7 @@ scale(1,'e/m') // => E F G A B C5 D5
 
 ### sequence
 <a name="sequence"></a>
-Create a Sequence using this <a href="/melrose/notations.html#sequence-not">format</a>.
+Create a Sequence using this <a href="/docs/reference/notations/#sequence">format</a>.
 
 > sequence('space-separated-notes')
 
@@ -758,9 +756,9 @@ Synchronise playing musical objects. Use play() for serial playing.
 
 #### examples	
 ```javascript
-sync(s1,s2,s3) // play s1,s2 and s3 at the same time
+s1 = sync(s1,s2,s3) // play s1,s2 and s3 at the same time
 
-sync(loop1,loop2) // begin loop2 at the next start of loop1
+s2 = sync(loop1,loop2) // begin loop2 at the next start of loop1
 ```
 
 ### track
@@ -771,7 +769,7 @@ Create a named track for a given MIDI channel with a musical object.
 
 #### examples	
 ```javascript
-track("lullaby",1,onbar(2, sequence('c d e'))) // => a new track on MIDI channel 1 with sequence starting at bar
+track("lullaby",1,onbar(2, sequence('c d e'))) // => a new track on MIDI channel 1 with sequence starting at bar 2
 ```
 
 ### undynamic
