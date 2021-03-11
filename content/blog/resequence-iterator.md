@@ -22,7 +22,7 @@ m = resequence(i,s)
 l = loop(m,next(i))
 
 {{< / highlight >}}
-<a href="https://storage.googleapis.com/downloads.ernestmicklei.com/melrose/melrose_drum_pattern-1.aif">🎶 Play</a>
+<a href="#" onClick="MIDIjs.play('/midi/blog-resequence-iterator.mid')">🎶 Play</a>
 
 Using `resequence` you can compose a new sequence with index-based entries.
 The first compostion played by the loop is `(C E) (G B)`.
