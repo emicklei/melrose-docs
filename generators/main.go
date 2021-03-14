@@ -105,6 +105,7 @@ func main() {
 		if len(each.Title) == 0 {
 			continue
 		}
+		// TODO needed?
 		// aliasses do not have a separate doc section
 		if unicode.IsUpper(rune(k[0])) {
 			continue
@@ -113,8 +114,12 @@ func main() {
 		if len(each.Description) == 0 {
 			continue
 		}
+		title := k
+		if len(each.Alias) > 0 {
+			title = fmt.Sprintf("%s (%s)", k, each.Alias)
+		}
 		df := DocumentedFunction{
-			Title:            k,
+			Title:            title,
 			ShortDescription: each.Title,
 			Description:      firstUpcaseAndDot(each.Description),
 			Examples:         strings.Split(each.Samples, "\n"),

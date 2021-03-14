@@ -64,7 +64,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#octave">octave</a>
 - <a href="#octavemap">octavemap</a>
 - <a href="#onbar">onbar</a>
-- <a href="#pitch">pitch</a>
+- <a href="#pitch">pitch (transpose)</a>
 - <a href="#pitchmap">pitchmap</a>
 - <a href="#print">print</a>
 - <a href="#random">random</a>
@@ -74,6 +74,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#reverse">reverse</a>
 - <a href="#stretch">stretch</a>
 - <a href="#track">track</a>
+- <a href="#transpose">transpose (transpose)</a>
 - <a href="#undynamic">undynamic</a>
 - <a href="#ungroup">ungroup</a>
 
@@ -551,7 +552,7 @@ fun = play(scale(2,'c')) // what to do when a key is pressed (NoteOn)
 onkey(c2, fun) // if C2 is pressed on the axiom device that evaluate the function "fun"
 ```
 
-### pitch
+### pitch (transpose)
 <a name="pitch"></a>
 Change the pitch with a delta of semitones.
 
@@ -563,7 +564,7 @@ pitch(-1,sequence('c d e'))
 
 p = interval(-4,4,1)
 
-pitch(p,note('c'))
+transpose(p,note('c'))
 ```
 
 ### pitchmap
@@ -770,6 +771,21 @@ Create a named track for a given MIDI channel with a musical object.
 #### examples	
 ```javascript
 track("lullaby",1,onbar(2, sequence('c d e'))) // => a new track on MIDI channel 1 with sequence starting at bar 2
+```
+
+### transpose (transpose)
+<a name="transpose"></a>
+Change the pitch with a delta of semitones.
+
+> pitch(semitones,sequenceable)
+
+#### examples	
+```javascript
+pitch(-1,sequence('c d e'))
+
+p = interval(-4,4,1)
+
+transpose(p,note('c'))
 ```
 
 ### undynamic
