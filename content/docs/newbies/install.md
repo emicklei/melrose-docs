@@ -44,10 +44,16 @@ Contact me (see github) if you want a commercial, signed and supported version.
 
 Until we have a proper installer, download the following files for installing `melrose` on Microsoft Windows.
 
+Shared libraries for all versions
+
 - [libgcc](https://s3.amazonaws.com/public.philemonworks.com/libgcc_s_seh-1.dll)
 - [libstdc](https://s3.amazonaws.com/public.philemonworks.com/libstdc%2B%2B-6.dll)
 - [libwinpthread](https://s3.amazonaws.com/public.philemonworks.com/libwinpthread-1.dll)
-- [melrose.exe](https://s3.amazonaws.com/public.philemonworks.com/melrose.exe)
+
+Pick one version
+
+- [v0.38.1 melrose.exe](https://s3.amazonaws.com/public.philemonworks.com/melrose.exe)
+- [v0.39.0 melrose.exe](https://storage.googleapis.com/downloads.ernestmicklei.com/melrose/versions/windows/0.39.0/melrose.exe)
 
 ### Melrōse for Ubuntu
 
