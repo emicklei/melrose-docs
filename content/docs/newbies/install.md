@@ -38,6 +38,7 @@ Contact me (see github) if you want a commercial, signed and supported version.
 
 - [Melrose-Sierra-v0.38.1.pkg 2021-02-28](https://storage.googleapis.com/downloads.ernestmicklei.com/melrose/versions/Melrose-Sierra-v0.38.1.pkg)
 - [Melrose-Catalina-v0.38.1.pkg 2021-02-28](https://storage.googleapis.com/downloads.ernestmicklei.com/melrose/versions/Melrose-Catalina-v0.38.1.pkg)
+- [Melrose-Catalina-v0.39.0.pkg 2021-04-03](https://storage.googleapis.com/downloads.ernestmicklei.com/melrose/versions/Melrose-Catalina-v0.39.0.pkg)
 
 ### Melrōse for Windows
 
