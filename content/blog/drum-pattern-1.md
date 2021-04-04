@@ -3,7 +3,7 @@ title: "Drum Pattern"
 description: "Using notemap functions to create a drum beat."
 lead: "Using notemap functions to create a drum beat."
 date: 2021-03-06T16:53:58+01:00
-lastmod: 2021-03-06T16:53:58+01:00
+lastmod: 2021-04-04T10:53:58+01:00
 draft: false
 weight: 50 
 contributors: []
@@ -29,7 +29,7 @@ d3 = notemap('5 13',clap)
 d4 = notemap('1 2 4 7 9 10 12 15',kick)
 d5 = notemap('16',note('16=')) // 1/16 rest at the end to make 16 notes in the set
 set = merge(d1,d2,d3,d4,d5)
-lp_set = loop(set)
+lp_set = loop(channel(10, set)) // channel 10 is the general midi for a drumkit
 
 {{< / highlight >}}
 
@@ -51,7 +51,7 @@ The indices in this example were found using [Ableton learning music](https://le
 An alternative way to describe the indices in a `notemap` is using dots (.) and bangs (!).
 
 ```javascript
-d1 = notemap('..!......!!.....') // 16 characters
+d1 = notemap('..!......!!.....', kick) // 16 characters
 ```
 
 Which gives a better visual feedback of the pattern.
