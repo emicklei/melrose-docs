@@ -8,7 +8,7 @@ menu:
 ## play a musical object
 
 There are several ways to start listening to your musical object.
-Note that the editor plugin has keyboard shortcuts to play musical objects instead of using functions such as `play`, `begin` and `end`.
+Note that the editor plugin has keyboard shortcuts to play musical objects instead of using functions such as `play` and `stop`.
 ### play
 
 ```javascript
