@@ -74,7 +74,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#reverse">reverse</a>
 - <a href="#stretch">stretch</a>
 - <a href="#track">track</a>
-- <a href="#transpose">transpose (transpose)</a>
+- <a href="#transpose">transpose</a>
 - <a href="#undynamic">undynamic</a>
 - <a href="#ungroup">ungroup</a>
 
@@ -100,8 +100,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 Create an index getter (1-based) to select a musical object.
 
 > at(index,object)
-
-#### examples	
+	
 ```javascript
 at(1,scale('e/m')) // => E
 ```
@@ -111,8 +110,7 @@ at(1,scale('e/m')) // => E
 Set the Beats in a Bar; default is 4.
 
 > biab(beats-in-a-bar)
-
-#### examples	
+	
 ```javascript
 biab(4)
 ```
@@ -122,8 +120,7 @@ biab(4)
 Set the Beats Per Minute (BPM) [1..300]; default is 120.
 
 > bpm(beats-per-minute)
-
-#### examples	
+	
 ```javascript
 bpm(90)
 
@@ -137,8 +134,7 @@ l = loop(bpm(speedup),sequence('c e g'),next(speedup))
 Select a MIDI channel, must be in [1..16]; must be a top-level operator.
 
 > channel(number,sequenceable)
-
-#### examples	
+	
 ```javascript
 channel(2,sequence('c2 e3')) // plays on instrument connected to MIDI channel 2
 ```
@@ -148,8 +144,7 @@ channel(2,sequence('c2 e3')) // plays on instrument connected to MIDI channel 2
 Create a Chord from its string <a href="/docs/reference/notations/#chord">format</a>.
 
 > chord('note')
-
-#### examples	
+	
 ```javascript
 chord('c#5/m/1')
 
@@ -161,8 +156,7 @@ chord('g/M/2') // Major G second inversion
 Create a Chord sequence using this <a href="/docs/reference/notations/#chordsequence">format</a>.
 
 > chordsequence('chords')
-
-#### examples	
+	
 ```javascript
 chordsequence('e f') // => (E A♭ B) (F A C5)
 
@@ -174,8 +168,7 @@ chordsequence('e f') // => (E A♭ B) (F A C5)
 Select a MIDI device from the available device IDs; must become before channel.
 
 > device(number,sequenceable)
-
-#### examples	
+	
 ```javascript
 device(1,channel(2,sequence('c2 e3'))) // plays on connected device 1 through MIDI channel 2
 ```
@@ -185,8 +178,7 @@ device(1,channel(2,sequence('c2 e3'))) // plays on connected device 1 through MI
 Computes the duration of the object using the current BPM.
 
 > duration(object)
-
-#### examples	
+	
 ```javascript
 duration(note('c')) // => 375ms
 ```
@@ -198,8 +190,7 @@ Creates a new modified musical object for which the dynamics of all notes are ch
 	.
 
 > dynamic(emphasis,object)
-
-#### examples	
+	
 ```javascript
 dynamic('++',sequence('e f')) // => E++ F++
 ```
@@ -209,8 +200,7 @@ dynamic('++',sequence('e f')) // => E++ F++
 Changes the dynamic of notes from a musical object. 1-index-based mapping.
 
 > dynamicmap('mapping',object)
-
-#### examples	
+	
 ```javascript
 dynamicmap('1:++,2:--',sequence('e f')) // => E++ F--
 
@@ -222,8 +212,7 @@ dynamicmap('2:o,1:++,2:--,1:++', sequence('a b') // => B A++ B-- A++
 Writes a multi-track MIDI file.
 
 > export(filename,sequenceable)
-
-#### examples	
+	
 ```javascript
 export('myMelody-v1',myObject)
 ```
@@ -236,8 +225,7 @@ Fraction can also be an exact float value between 0 and 1.
 .
 
 > fraction(object,object)
-
-#### examples	
+	
 ```javascript
 fraction(8,sequence('e f')) // => ⅛E ⅛F , shorten the notes from quarter to eight
 ```
@@ -247,8 +235,7 @@ fraction(8,sequence('e f')) // => ⅛E ⅛F , shorten the notes from quarter to 
 Create a sequence with notes for which the fractions are changed. 1-based indexing. use space or comma as separator.
 
 > fractionmap('fraction-mapping',object)
-
-#### examples	
+	
 ```javascript
 fractionmap('3:. 2:4,1:2',sequence('c e g')) // => .G E ½C
 ```
@@ -258,8 +245,7 @@ fractionmap('3:. 2:4,1:2',sequence('c e g')) // => .G E ½C
 Create a new sequence in which all notes of a musical object are grouped.
 
 > group(sequenceable)
-
-#### examples	
+	
 ```javascript
 group(sequence('c d e')) // => (C D E)
 ```
@@ -269,8 +255,7 @@ group(sequence('c d e')) // => (C D E)
 Evaluate all the statements from another file.
 
 > import(filename)
-
-#### examples	
+	
 ```javascript
 import('drumpatterns.mel')
 ```
@@ -280,8 +265,7 @@ import('drumpatterns.mel')
 Create an integer repeating interval (from,to,by,method). Default method is 'repeat', Use next() to get a new integer.
 
 > interval(from,to,by)
-
-#### examples	
+	
 ```javascript
 int1 = interval(-2,4,1)
 
@@ -293,8 +277,7 @@ lp_cdef = loop(pitch(int1,sequence('c d e f')), next(int1))
 Iterator that has an array of constant values and evaluates to one. Use next() to increase and rotate the value.
 
 > iterator(array-element)
-
-#### examples	
+	
 ```javascript
 i = iterator(1,3,5,7,9)
 
@@ -310,8 +293,7 @@ lp = loop(p,next(i))
 Joins one or more musical objects as one.
 
 > join(first,second)
-
-#### examples	
+	
 ```javascript
 a = chord('a')
 
@@ -325,8 +307,7 @@ ab = join(a,b) // => (A D♭5 E5) (C E G)
 Creates a new join by mapping elements. 1-index-based mapping.
 
 > joinmap('indices',join)
-
-#### examples	
+	
 ```javascript
 j = join(note('c'), sequence('d e f'))
 
@@ -338,8 +319,7 @@ jm = joinmap('1 (2 3) 4',j) // => C = D =
 Use the key to trigger the play of musical object.
 
 > key('note')
-
-#### examples	
+	
 ```javascript
 c2 = key('c2') // C2 key on the default input device and default channel
 
@@ -355,8 +335,7 @@ c2 = key(channel(3,note('c2')) // C2 key on the default input device and channel
 Use the knob as an integer value for a parameter in any object.
 
 > knob(device-id,midi-number)
-
-#### examples	
+	
 ```javascript
 axiom = 1 // device ID for the M-Audio Axiom 25
 
@@ -372,25 +351,23 @@ pitch(k,scale(1,'E')) // when played, use the current value of knob "k"
 Listen for note(s) from a device and call a playable function to handle.
 
 > listen(variable-or-device-selector,function)
-
-#### examples	
+	
 ```javascript
 rec = note('c') // define a variable "rec" with a initial object ; this is a place holder
 
 fun = play(rec) // define the playable function to call when notes are received ; loop and print are also possible
 
-ear = listen(rec,fun) // start a listener for notes from default input device, store it in "rec" and call "fun"
+listen(rec,fun) // start a listener for notes from default input device, store it in "rec" and call "fun"
 
-alt = listen(device(1,rec),fun) // start a listener for notes from input device 1
+listen(device(1,rec),fun) // start a listener for notes from input device 1
 ```
 
 ### loop
 <a name="loop"></a>
-Create a new loop from one or more musical objects; must be assigned to a variable.
+Create a new loop from one or more musical objects.
 
-> lp_object = loop(object)
-
-#### examples	
+> loop(object)
+	
 ```javascript
 cb = sequence('c d e f g a b')
 
@@ -402,8 +379,7 @@ myloop = loop(cb,reverse(cb))
 Merges multiple sequences into one sequence.
 
 > merge(sequenceable)
-
-#### examples	
+	
 ```javascript
 m1 = notemap('..!..!..!', note('c2'))
 
@@ -420,8 +396,7 @@ Second parameter is the MIDI number and must be one of [0..127].
 The third parameter is the velocity (~ loudness) and must be one of [0..127].
 
 > midi(numberOrDuration,number,number)
-
-#### examples	
+	
 ```javascript
 midi(500,52,80) // => 500ms E3+
 
@@ -433,8 +408,7 @@ midi(16,36,70) // => 16C2 (kick)
 Sends a MIDI message with status, channel(ignore if < 1), 2nd byte and 3rd byte to an output device. Can be used as a musical object.
 
 > midi_send(device-id,status,channel,2nd-byte,3rd-byte
-
-#### examples	
+	
 ```javascript
 midi_send(1,0xB0,7,0x7B,0) // to device id 1, control change, all notes off in channel 7
 
@@ -450,8 +424,7 @@ midi_send(3,0xB0,1,120,0) // control change, all notes off for channel 1
 Create a multi-track object from zero or more tracks.
 
 > multitrack(track)
-
-#### examples	
+	
 ```javascript
 multitrack(track1,track2,track3) // 3 tracks in one multi-track object
 ```
@@ -461,8 +434,7 @@ multitrack(track1,track2,track3) // 3 tracks in one multi-track object
 Is used to produce the next value in a generator such as random, iterator and interval.
 
 > 
-
-#### examples	
+	
 ```javascript
 i = interval(-4,4,2)
 
@@ -478,8 +450,7 @@ begin(lp_pi)
 Create a Note using this <a href="/docs/reference/notations/#note">format</a>.
 
 > note('letter')
-
-#### examples	
+	
 ```javascript
 note('e')
 
@@ -491,8 +462,7 @@ note('2.e#--')
 Creates a mapper of notes by index (1-based) or using dots (.) and bangs (!).
 
 > notemap('space-separated-1-based-indices-or-dots-and-bangs',has-note)
-
-#### examples	
+	
 ```javascript
 m1 = notemap('..!..!..!', note('c2'))
 
@@ -504,8 +474,7 @@ m2 = notemap('3 6 9', octave(-1,note('d2')))
 Change the pitch of notes by steps of 12 semitones for one or more musical objects.
 
 > octave(offset,sequenceable)
-
-#### examples	
+	
 ```javascript
 octave(1,sequence('c d')) // => C5 D5
 ```
@@ -515,8 +484,7 @@ octave(1,sequence('c d')) // => C5 D5
 Create a sequence with notes for which the order and the octaves are changed.
 
 > octavemap('int2int',object)
-
-#### examples	
+	
 ```javascript
 octavemap('1:-1,2:0,3:1',chord('c')) // => (C3 E G5)
 ```
@@ -526,8 +494,7 @@ octavemap('1:-1,2:0,3:1',chord('c')) // => (C3 E G5)
 Puts a musical object on a track to start at a specific bar.
 
 > onbar(bar,object)
-
-#### examples	
+	
 ```javascript
 tr = track("solo",2, onbar(1,soloSequence)) // 2 = channel
 ```
@@ -540,8 +507,7 @@ If pressed again, the play will stop.
 Remove the assignment using the value nil for the playable.
 
 > onkey(key,playable-or-evaluatable-or-nil)
-
-#### examples	
+	
 ```javascript
 axiom = 1 // device ID for the M-Audio Axiom 25
 
@@ -557,8 +523,7 @@ onkey(c2, fun) // if C2 is pressed on the axiom device that evaluate the functio
 Change the pitch with a delta of semitones.
 
 > pitch(semitones,sequenceable)
-
-#### examples	
+	
 ```javascript
 pitch(-1,sequence('c d e'))
 
@@ -572,8 +537,7 @@ transpose(p,note('c'))
 Create a sequence with notes for which the order and the pitch are changed. 1-based indexing.
 
 > pitchmap('int2int',object)
-
-#### examples	
+	
 ```javascript
 pitchmap('1:-1,1:0,1:1',note('c')) // => B3 C D
 ```
@@ -583,8 +547,7 @@ pitchmap('1:-1,1:0,1:1',note('c')) // => B3 C D
 Play all musical objects.
 
 > play(sequenceable)
-
-#### examples	
+	
 ```javascript
 play(s1,s2,s3) // play s3 after s2 after s1
 ```
@@ -594,8 +557,7 @@ play(s1,s2,s3) // play s3 after s2 after s1
 Prints an object when evaluated (play,loop).
 
 > 
-
-#### examples	
+	
 ```javascript
 
 ```
@@ -605,8 +567,7 @@ Prints an object when evaluated (play,loop).
 Create a Chord progression using this <a href="/docs/reference/notations/#chordprogression">format</a>.
 
 > progression('scale','space-separated-roman-chords')
-
-#### examples	
+	
 ```javascript
 progression('C','II V I') // => (D F A) (G B D5) (C E G)
 ```
@@ -616,8 +577,7 @@ progression('C','II V I') // => (D F A) (G B D5) (C E G)
 Create a random integer generator. Use next() to generate a new integer.
 
 > random(from,to)
-
-#### examples	
+	
 ```javascript
 num = random(1,10)
 
@@ -629,8 +589,7 @@ next(num)
 Create a recorded sequence of notes from the current MIDI input device.
 
 > record(rec)
-
-#### examples	
+	
 ```javascript
 rec = sequence('') // variable to store the recorded sequence
 
@@ -642,8 +601,7 @@ record(rec) // record notes played on the current input device and stop recordin
 Repeat one or more musical objects a number of times.
 
 > repeat(times,sequenceables)
-
-#### examples	
+	
 ```javascript
 repeat(4,sequence('c d e'))
 ```
@@ -653,8 +611,7 @@ repeat(4,sequence('c d e'))
 Replaces all occurrences of one musical object with another object for a given composed musical object.
 
 > replace(target,from,to)
-
-#### examples	
+	
 ```javascript
 c = note('c')
 
@@ -670,8 +627,7 @@ pitchD = replace(pitchA, c, d) // c -> d in pitchA
 Creates a modifier of sequence notes by index (1-based).
 
 > resequence('space-separated-1-based-indices',sequenceable)
-
-#### examples	
+	
 ```javascript
 s1 = sequence('C D E F G A B')
 
@@ -685,8 +641,7 @@ i2 = resequence('(6 5) 4 3 (2 1)',s1) // => (B A) G F (E D)
 Reverse the (groups of) notes in a sequence.
 
 > reverse(sequenceable)
-
-#### examples	
+	
 ```javascript
 reverse(chord('a'))
 ```
@@ -696,8 +651,7 @@ reverse(chord('a'))
 Create a Scale using this <a href="/docs/reference/notations/#scale">format</a>.
 
 > scale(octaves,'scale-syntax')
-
-#### examples	
+	
 ```javascript
 scale(1,'e/m') // => E F G A B C5 D5
 ```
@@ -707,8 +661,7 @@ scale(1,'e/m') // => E F G A B C5 D5
 Create a Sequence using this <a href="/docs/reference/notations/#sequence">format</a>.
 
 > sequence('space-separated-notes')
-
-#### examples	
+	
 ```javascript
 sequence('c d e')
 
@@ -722,8 +675,7 @@ sequence('c (d e f) a =')
 Stop running loop(s) or listener(s). Ignore if it was stopped.
 
 > stop(control)
-
-#### examples	
+	
 ```javascript
 l1 = loop(sequence('c e g'))
 
@@ -739,8 +691,7 @@ stop() // stop all playables
 Stretches the duration of musical object(s) with a factor. If the factor < 1 then duration is shortened.
 
 > stretch(factor,object)
-
-#### examples	
+	
 ```javascript
 stretch(2,note('c'))  // 2C
 
@@ -754,12 +705,11 @@ stretch(8,note('c'))  // C with length of 2 bars
 Synchronise playing musical objects. Use play() for serial playing.
 
 > sync(object)
-
-#### examples	
+	
 ```javascript
-s1 = sync(s1,s2,s3) // play s1,s2 and s3 at the same time
+sync(s1,s2,s3) // play s1,s2 and s3 at the same time
 
-s2 = sync(loop1,loop2) // begin loop2 at the next start of loop1
+sync(loop1,loop2) // begin loop2 at the next start of loop1
 ```
 
 ### track
@@ -767,19 +717,17 @@ s2 = sync(loop1,loop2) // begin loop2 at the next start of loop1
 Create a named track for a given MIDI channel with a musical object.
 
 > track('title',midi-channel, onbar(1,object))
-
-#### examples	
+	
 ```javascript
 track("lullaby",1,onbar(2, sequence('c d e'))) // => a new track on MIDI channel 1 with sequence starting at bar 2
 ```
 
-### transpose (transpose)
+### transpose
 <a name="transpose"></a>
 Change the pitch with a delta of semitones.
 
 > pitch(semitones,sequenceable)
-
-#### examples	
+	
 ```javascript
 pitch(-1,sequence('c d e'))
 
@@ -793,8 +741,7 @@ transpose(p,note('c'))
 Set the dymamic to normal for all notes in a musical object.
 
 > undynamic(sequenceable)
-
-#### examples	
+	
 ```javascript
 undynamic('A+ B++ C-- D-') // =>  A B C D
 ```
@@ -804,8 +751,7 @@ undynamic('A+ B++ C-- D-') // =>  A B C D
 Undo any grouping of notes from one or more musical objects.
 
 > ungroup(sequenceable)
-
-#### examples	
+	
 ```javascript
 ungroup(chord('e')) // => E G B
 

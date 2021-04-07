@@ -13,4 +13,4 @@ weight: 610
 toc: true
 ---
 
-{{< alert icon="💡" text="Learn more about the melrōse language" >}}
+{{< alert icon="💡" text="Did you know you can also record MIDI using melrōse?" >}}

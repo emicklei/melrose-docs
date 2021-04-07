@@ -1,7 +1,7 @@
 ---
 title: "Showcase"
 description: "Published videos that use Melrōse."
-lead: "Published videos that use Melrōse"
+lead: "Published videos that use Melrōse."
 date: 2021-01-13T15:21:01+02:00
 lastmod: 2021-01-13T15:21:01+02:00
 draft: false

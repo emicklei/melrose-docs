@@ -13,3 +13,4 @@ weight: 620
 toc: true
 ---
 
+Join our workspace [Melrose on Slack](https://melrose-midi.slack.com/).

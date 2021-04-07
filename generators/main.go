@@ -66,8 +66,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 {{.Description}}
 
 > {{.Syntax}}
-
-#### examples	
+	
 {{ backticks }}javascript{{ range .Examples }}
 {{ . }}
 {{ end }}{{ backticks }}
@@ -115,7 +114,7 @@ func main() {
 			continue
 		}
 		title := k
-		if len(each.Alias) > 0 {
+		if len(each.Alias) > 0 && each.Alias != title {
 			title = fmt.Sprintf("%s (%s)", k, each.Alias)
 		}
 		df := DocumentedFunction{

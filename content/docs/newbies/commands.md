@@ -1,7 +1,7 @@
 ---
 title: "Commands"
-description: "Melrose comes with commands for common tasks."
-lead: "Melrose comes with commands for common tasks."
+description: "The melrose tool comes with commands for common tasks."
+lead: "The melrose tool comes with commands for common tasks."
 date: 2020-10-13T15:21:01+02:00
 lastmod: 2020-10-13T15:21:01+02:00
 draft: false
@@ -31,7 +31,7 @@ Show all availale input and output devices.
 :m
 ```
 
-### Kill the sounds
+### Immediately stop all sounds
 
 Abort playing of any music object.
 
