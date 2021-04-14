@@ -42,7 +42,7 @@ We have tested `melrose` with only a few such products:
 
 ### Showcase
 
-See what others have created with Melrōse. [Showcase →](https://www.youtube.com/results?search_query=melr%C5%8Dse)
+See what others have created with Melrōse. [Showcases →](https://www.youtube.com/results?search_query=melr%C5%8Dse)
 
 ## Contributing
 

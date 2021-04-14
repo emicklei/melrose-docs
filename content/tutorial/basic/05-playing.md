@@ -8,7 +8,8 @@ menu:
 ## play a musical object
 
 There are several ways to start listening to your musical object.
-Note that the editor plugin has keyboard shortcuts to play musical objects instead of using functions such as `play` and `stop`.
+
+Note that the editor plugin has keyboard shortcuts to play musical objects instead of using functions such as `cmd+3 = play` and `cmd+5 = stop`.
 ### play
 
 ```javascript
@@ -44,11 +45,11 @@ play(lp_s1)
 stop(lp_s1)
 ```
 
-The function `begin` and `end` apply to `Loop` and `Listen` objects only.
+The function `play` and `stop` apply to `Loop` and `Listen` objects only.
 Basicly, it will play one or more musical objects, each after the other, repeatedly.
 Both functions require a variable, here `lp_s1` to which a loop is assigned and is needed for you to stop playing.
-The function `begin` will start playing the loop immediately.
-The function `end` will stop this loop.
+The function `play` will start playing the loop immediately.
+The function `stop` will stop this loop.
 
 ### track
 
@@ -83,8 +84,8 @@ play(all)
 export("my-project",all)
 ```
 
-A multitrack is simply a collection of tracks.
-It can be used to play all tracks at once or to export to a MIDI file.
+A multitrack is simply a collection of parallel tracks.
+It can be used to play all tracks at once or to export to a MIDI file (`my-project.mid`).
 
 ### stop playing
 
