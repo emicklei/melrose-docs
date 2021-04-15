@@ -15,14 +15,14 @@ toc: true
 
 ## Requirements
 
-To use the playground, you need a browser that is [supporting WebMIDI](https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess). At the time of writing, this includes both Chrome and Edge.
+To use the playground, you need a browser that is [supporting WebMIDI →](https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess). At the time of writing, this includes both Chrome and Edge.
 
 In addition, you need a soft- or hardware synthesizer connected to your computer such that `melrōse` can send and receive MIDI messages.
 
 ## Play and share your programs
 
-- Open [Melrōse Playground](https://play.melrōse.org).
-The editor will accept the same keyboard shortcuts as available in the [VSC plugin](https://xn--melrse-egb.org/docs/newbies/vsc-plugin/).
+- Open [Melrōse Playground →](https://play.melrōse.org).
+The editor will accept the same keyboard shortcuts as available in the [VSC plugin →](https://xn--melrse-egb.org/docs/newbies/vsc-plugin/).
 
 - Select the whole script (`ctr+a`) and play the loop (`cmd+3`).
 
@@ -30,4 +30,4 @@ The editor will accept the same keyboard shortcuts as available in the [VSC plug
 
 - You can share your melody by publising a web link.
 
-- Need [help?](https://xn--melrse-egb.org/docs/help/faq/)
+- Need [help? →](https://xn--melrse-egb.org/docs/help/faq/)

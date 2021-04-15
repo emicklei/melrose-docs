@@ -23,11 +23,11 @@ You can either install the application from source or use the unsigned downloada
 
 ## Install Melrōse plugin for the free Visual Studio Code editor
 
-You can install the extension directly from your running Visual Studio Code Editor or by going to the [Marketplace published package](https://marketplace.visualstudio.com/items?itemName=EMicklei.melrose-for-vscode)
+You can install the extension directly from your running Visual Studio Code Editor or by going to the [Marketplace published package →](https://marketplace.visualstudio.com/items?itemName=EMicklei.melrose-for-vscode)
 
 ## Install Melrōse from source
 
-Instructions to get the source, install the runtime dependencies and compile the program, is documented in the [README](https://github.com/emicklei/melrose) of the project.
+Instructions to get the source, install the runtime dependencies and compile the program, is documented in the [README →](https://github.com/emicklei/melrose) of the project.
 
 ## Install Melrōse from package
 
@@ -57,4 +57,4 @@ Pick one version
 
 ### Melrōse for Ubuntu
 
-Instructions to get the source, install the runtime dependencies and compile the program, is documented in the [README](https://github.com/emicklei/melrose) of the project.
+Instructions to get the source, install the runtime dependencies and compile the program, is documented in the [README →](https://github.com/emicklei/melrose) of the project.

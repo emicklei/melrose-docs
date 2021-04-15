@@ -15,12 +15,12 @@ toc: true
 
 ### install
 
-See [instructions](https://marketplace.visualstudio.com/items?itemName=EMicklei.melrose-for-vscode) on how to install this plugin after you have installed Visual Studio Code.
+See [instructions →](https://marketplace.visualstudio.com/items?itemName=EMicklei.melrose-for-vscode) on how to install this plugin after you have installed Visual Studio Code.
 
 ### edit
 
 This editor extension works with `.mel` and `.melrose` files.
-The syntax of the program uses the [Melrōse Lanugage](/docs/reference/dsl/).
+The syntax of the program uses the [Melrōse Lanugage →](/docs/reference/dsl/).
 
 ### ⌘+e : Evaluate
 
