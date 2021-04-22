@@ -13,17 +13,7 @@ weight: 100
 toc: true
 ---
 
-## Get started
-
-There are two main ways to get started with Melrōse:
-
-### Tutorial
-
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." >}}
-
-### Quick Start
-
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." >}}
+....to write
 
 ### Digital Audio Workstation (DAW)
 
@@ -35,7 +25,7 @@ We have tested `melrose` with only a few such products:
 
 - [Using Melrōse with Garageband](https://xn--melrse-egb.org/blog/daw-apple-garageband/)
     - no support for multi-channel tracks
-- [Logic Pro X (commercial)](https://xn--melrse-egb.org/blog/daw-apple-logic-pro-x/)
+- [Using Melrōse with Logic Pro X (commercial)](https://xn--melrse-egb.org/blog/daw-apple-logic-pro-x/)
     - with support for multi-channel tracks
 - FL Studio
 - LMMS
