@@ -64,8 +64,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#octave">octave</a>
 - <a href="#octavemap">octavemap</a>
 - <a href="#onbar">onbar</a>
-- <a href="#pitch">pitch (transpose)</a>
-- <a href="#pitchmap">pitchmap</a>
+- <a href="#pitch">pitch</a>
 - <a href="#print">print</a>
 - <a href="#random">random</a>
 - <a href="#repeat">repeat</a>
@@ -74,7 +73,8 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#reverse">reverse</a>
 - <a href="#stretch">stretch</a>
 - <a href="#track">track</a>
-- <a href="#transpose">transpose</a>
+- <a href="#transpose">transpose (pitch)</a>
+- <a href="#transposemap">transposemap (pitchmap)</a>
 - <a href="#undynamic">undynamic</a>
 - <a href="#ungroup">ungroup</a>
 
@@ -91,6 +91,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#onkey">onkey</a>
 - <a href="#play">play</a>
 - <a href="#record">record</a>
+- <a href="#set">set</a>
 - <a href="#stop">stop</a>
 - <a href="#sync">sync</a>
 
@@ -186,13 +187,15 @@ duration(note('c')) // => 375ms
 ### dynamic
 <a name="dynamic"></a>
 Creates a new modified musical object for which the dynamics of all notes are changed.
-	The first parameter controls the emphasis the note, e.g. + (mezzoforte,mf), -- (piano,p).
+	The first parameter controls the emphasis the note, e.g. + (mezzoforte,mf), -- (piano,p) or a velocity [0..127].
 	.
 
 > dynamic(emphasis,object)
 	
 ```javascript
 dynamic('++',sequence('e f')) // => E++ F++
+
+dynamic(112,note('a')) // => A++++
 ```
 
 ### dynamicmap
@@ -269,7 +272,7 @@ Create an integer repeating interval (from,to,by,method). Default method is 'rep
 ```javascript
 int1 = interval(-2,4,1)
 
-lp_cdef = loop(pitch(int1,sequence('c d e f')), next(int1))
+lp_cdef = loop(transpose(int1,sequence('c d e f')), next(int1))
 ```
 
 ### iterator
@@ -281,7 +284,7 @@ Iterator that has an array of constant values and evaluates to one. Use next() t
 ```javascript
 i = iterator(1,3,5,7,9)
 
-p = pitch(i,note('c'))
+p = transpose(i,note('c'))
 
 lp = loop(p,next(i))
 
@@ -337,13 +340,13 @@ Use the knob as an integer value for a parameter in any object.
 > knob(device-id,midi-number)
 	
 ```javascript
-axiom = 1 // device ID for the M-Audio Axiom 25
+axiom = 1 // device ID for my connected M-Audio Axiom 25
 
 B1 = 20 // MIDI number assigned to this knob on the controller
 
 k = knob(axiom,B1)
 
-pitch(k,scale(1,'E')) // when played, use the current value of knob "k"
+transpose(k,scale(1,'E')) // when played, use the current value of knob "k"
 ```
 
 ### listen
@@ -371,7 +374,7 @@ Create a new loop from one or more musical objects.
 ```javascript
 cb = sequence('c d e f g a b')
 
-myloop = loop(cb,reverse(cb))
+loop(cb,reverse(cb))
 ```
 
 ### merge
@@ -438,7 +441,7 @@ Is used to produce the next value in a generator such as random, iterator and in
 ```javascript
 i = interval(-4,4,2)
 
-pi = pitch(i,sequence('c d e f g a b')) // current value of "i" is used
+pi = transpose(i,sequence('c d e f g a b')) // current value of "i" is used
 
 lp_pi = loop(pi,next(i)) // "i" will advance to the next value
 
@@ -518,28 +521,18 @@ fun = play(scale(2,'c')) // what to do when a key is pressed (NoteOn)
 onkey(c2, fun) // if C2 is pressed on the axiom device that evaluate the function "fun"
 ```
 
-### pitch (transpose)
+### pitch
 <a name="pitch"></a>
 Change the pitch with a delta of semitones.
 
-> pitch(semitones,sequenceable)
+> transpose(semitones,sequenceable)
 	
 ```javascript
-pitch(-1,sequence('c d e'))
+transpose(-1,sequence('c d e'))
 
 p = interval(-4,4,1)
 
 transpose(p,note('c'))
-```
-
-### pitchmap
-<a name="pitchmap"></a>
-Create a sequence with notes for which the order and the pitch are changed. 1-based indexing.
-
-> pitchmap('int2int',object)
-	
-```javascript
-pitchmap('1:-1,1:0,1:1',note('c')) // => B3 C D
 ```
 
 ### play
@@ -617,7 +610,7 @@ c = note('c')
 
 d = note('d')
 
-pitchA = pitch(1,c)
+pitchA = transpose(1,c)
 
 pitchD = replace(pitchA, c, d) // c -> d in pitchA
 ```
@@ -670,6 +663,20 @@ sequence('(8c d e)') // => (⅛C D E)
 sequence('c (d e f) a =')
 ```
 
+### set
+<a name="set"></a>
+Generic function to change a default setting.
+
+> set(setting-name,setting-value)
+	
+```javascript
+set('midi.in',1) // default MIDI input device is 1
+
+set('midi.in.channel',2,10) // default MIDI channel for device 2 is 10
+
+set('midi.out',3) // default MIDI output device is 3
+```
+
 ### stop
 <a name="stop"></a>
 Stop running loop(s) or listener(s). Ignore if it was stopped.
@@ -697,7 +704,7 @@ stretch(2,note('c'))  // 2C
 
 stretch(0.25,sequence('(c e g)'))  // (16C 16E 16G)
 
-stretch(8,note('c'))  // C with length of 2 bars
+stretch(8,note('c'))  // C with length of 8 x 0.25 (quarter) = 2 bars
 ```
 
 ### sync
@@ -722,18 +729,28 @@ Create a named track for a given MIDI channel with a musical object.
 track("lullaby",1,onbar(2, sequence('c d e'))) // => a new track on MIDI channel 1 with sequence starting at bar 2
 ```
 
-### transpose
+### transpose (pitch)
 <a name="transpose"></a>
 Change the pitch with a delta of semitones.
 
-> pitch(semitones,sequenceable)
+> transpose(semitones,sequenceable)
 	
 ```javascript
-pitch(-1,sequence('c d e'))
+transpose(-1,sequence('c d e'))
 
 p = interval(-4,4,1)
 
 transpose(p,note('c'))
+```
+
+### transposemap (pitchmap)
+<a name="transposemap"></a>
+Create a sequence with notes for which the order and the pitch are changed. 1-based indexing.
+
+> transposemap('int2int',object)
+	
+```javascript
+transposemap('1:-1,1:0,1:1',note('c')) // => B3 C D
 ```
 
 ### undynamic
