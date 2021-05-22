@@ -11,8 +11,11 @@ github.com/emicklei/melrose v0.38.2 h1:rjRXaXqjGyT8aU4qk6ZUwxuS7finWKjOOhbSGXLAx
 github.com/emicklei/melrose v0.38.2/go.mod h1:saivkwjYG/DvhfjlSYzeohOAVB71o3PRoBmAAhszYio=
 github.com/emicklei/tre v1.2.0 h1:RBwuH30DDlaDGBXsoRbHAf20Q6ZN3F/UgAbtaiupRuE=
 github.com/emicklei/tre v1.2.0/go.mod h1:sjoUs9HVn5hfWdb6j2rv71rEQlfM2e/WPeEV4d99+38=
+github.com/fogleman/gg v1.3.0 h1:/7zJX8F6AaYQc57WQCyN9cAIz+4bCJGO9B+dyW29am8=
+github.com/fogleman/gg v1.3.0/go.mod h1:R/bRT+9gY/C5z7JzPU0zXsXHKM4/ayA+zqcVNZzPa1k=
 github.com/gdamore/encoding v1.0.0/go.mod h1:alR0ol34c49FCSBLjhosxzcPHQbf2trDkoo5dl+VrEg=
 github.com/gdamore/tcell v1.3.0/go.mod h1:Hjvr+Ofd+gLglo7RYKxxnzCBmev3BzsS67MebKS4zMM=
+github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0/go.mod h1:E/TSTwGwJL78qG/PmXZO1EjYhfJinVAhrmmHX6Z8B9k=
 github.com/jonasfj/go-localtunnel v0.0.0-20170326223115-8a804488f275 h1:CHhhnqQGmniRCgMx34aIcqasiKme7gsscUYO/2rMFnk=
 github.com/jonasfj/go-localtunnel v0.0.0-20170326223115-8a804488f275/go.mod h1:2jVFHClLG6ANLzONRisiL5vkbUOd82KNdQhdW4vykgY=
 github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfnI=
@@ -37,6 +40,7 @@ github.com/stretchr/testify v1.5.1 h1:nOGnQDM7FYENwehXlg/kFVnos3rEvtKTjRvOWSzb6H
 github.com/stretchr/testify v1.5.1/go.mod h1:5W2xD1RspED5o8YsWQXVCued0rvSQ+mT+I5cxcmMvtA=
 gitlab.com/gomidi/rtmididrv/imported/rtmidi v0.0.0-20210208101652-7be3f3dfd782 h1:93VwV6MCPGcjb02Pj1j0N6/E4H7NyYDyGk2uQozNU4c=
 gitlab.com/gomidi/rtmididrv/imported/rtmidi v0.0.0-20210208101652-7be3f3dfd782/go.mod h1:FYVFN2H23IsX56VntiDF9DgCIekHh359wW+iMl1W8rQ=
+golang.org/x/image v0.0.0-20210504121937-7319ad40d33e/go.mod h1:FeLwcggjj3mMvU+oOTbSwawSJRM1uh48EjtB4UJZlP0=
 golang.org/x/sys v0.0.0-20190626150813-e07cf5db2756/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20200212091648-12a6c2dcc1e4/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
