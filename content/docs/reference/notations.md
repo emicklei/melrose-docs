@@ -46,8 +46,8 @@ n = note('c#5')
 | Notation    | Description
 |-------------|---
 | \-\-\-\-\-    |Pianissississimo (pppp)
-| \-\-\--\      |Pianississimo (ppp)
-| \-\--\        |Pianissimo (pp)
+| \-\-\-\-      |Pianississimo (ppp)
+| \-\-\-        |Pianissimo (pp)
 | \-\-          |Piano (p)
 | -             |MezzoPiano (mp)
 | o (not 0)     |Normal (character is optional)
