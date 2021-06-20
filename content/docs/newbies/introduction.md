@@ -13,22 +13,16 @@ weight: 100
 toc: true
 ---
 
-....to write
+Music composition is both a creative process and one that follows many rules (chords, scales, patterns). Exploring variations and combinations can be done by playing instruments. With the availabilty of many digital instruments, both soft- and hardware, it is also possible to create music using digital programming methods. 
+
+Melrōse offers a fully human-centric approach to algorithmic composition of music. It defines a new programming language and includes a tool to play music by evaluating expressions in that langage. With Melrōse, exploring patterns in music is done by creating musical objects that can be played and changed at the same time.
+
 
 ### Digital Audio Workstation (DAW)
 
 Melrōse itself does not produce any sound.
 Instead, it sends MIDI messages to connected hardware or software, such as a DAW.
-There are many open-source and commercial products that provide synthesized sounds for many software instruments.
-
-We have tested `melrose` with only a few such products:
-
-- [Using Melrōse with Garageband](https://xn--melrse-egb.org/blog/daw-apple-garageband/)
-    - no support for multi-channel tracks
-- [Using Melrōse with Logic Pro X (commercial)](https://xn--melrse-egb.org/blog/daw-apple-logic-pro-x/)
-    - with support for multi-channel tracks
-- FL Studio
-- LMMS
+There are many open-source and commercial products that provide synthesized sounds for many software instruments such as LMMS, Logic Pro, Ableton, Garageband, FL Studio.
 
 ### Showcase
 

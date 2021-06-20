@@ -1,5 +1,5 @@
 ---
-title: "Quick Start"
+title: "Quick start"
 description: "Use the Melrōse Playground for getting started with Melrōse."
 lead: "Use the playground for getting started with Melrōse."
 date: 2020-11-16T13:59:39+01:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "newbies"
-weight: 120
+weight: 110
 toc: true
 ---
 

@@ -9,17 +9,20 @@ images: []
 menu:
   docs:
     parent: "newbies"
-weight: 110
+weight: 120
 toc: true
 ---
+
+## Overview
 
 A complete `melrose` installation requires:
 
 - Installation of Microsoft Visual Studio Code
 - Installation of the extension `melrose-for-vscode`
-- Installation of the `melrose` console application
+- Installation of the `melrose` console application for your operating system
 
-You can either install the application from source or use the unsigned downloadable packages.
+To try out `melrose` without any installation, go see the [Quick start →](/docs/newbies/quick-start/).
+
 
 ## Install Melrōse plugin for the free Visual Studio Code editor
 
