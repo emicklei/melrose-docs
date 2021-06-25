@@ -66,7 +66,6 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#octave">octave</a>
 - <a href="#octavemap">octavemap</a>
 - <a href="#onbar">onbar</a>
-- <a href="#onoff">onoff</a>
 - <a href="#pitch">pitch</a>
 - <a href="#pitchmap">pitchmap</a>
 - <a href="#print">print</a>
@@ -95,6 +94,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#loop">loop</a>
 - <a href="#multitrack">multitrack</a>
 - <a href="#onkey">onkey</a>
+- <a href="#onoff">onoff</a>
 - <a href="#play">play</a>
 - <a href="#record">record</a>
 - <a href="#set">set</a>
@@ -559,7 +559,17 @@ Play will send MIDI Note On, stop will send MIDI Note Off.
 > onoff(note)
 	
 ```javascript
-onkey(key(device(1,note('c4'))),onoff('e')) // if C4 is hit on input device 1 then play (sustain) key E on the default output device. A second hit of C4 will stop it
+// latch example
+
+// if C4 is hit on input device 1 
+
+// then play (sustain) key E on the default output device. 
+
+// A second hit of C4 will stop it
+
+
+
+onkey('c4',onoff('e')) // uses default input and default output MIDI device
 ```
 
 ### pitch
