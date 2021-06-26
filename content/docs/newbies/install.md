@@ -13,16 +13,15 @@ weight: 120
 toc: true
 ---
 
+{{< alert icon="💡" text="Use Quick start to try out `melrose` without any installation" >}}
+
 ## Overview
 
-A complete `melrose` installation requires:
+A complete `melrose` installation on your PC requires:
 
 - Installation of Microsoft Visual Studio Code
 - Installation of the extension `melrose-for-vscode`
 - Installation of the `melrose` console application for your operating system
-
-To try out `melrose` without any installation, go see the [Quick start →](/docs/newbies/quick-start/).
-
 
 ## Install Melrōse plugin for the free Visual Studio Code editor
 

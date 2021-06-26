@@ -13,4 +13,6 @@ weight: 620
 toc: true
 ---
 
-Join our workspace [Melrose on Slack](https://melrose-midi.slack.com/).
+If you have found an issue with the tool then please report it using our [Issue tracker](https://github.com/emicklei/melrose/issues).
+
+For any other help, suggestions, discussions and showcases, you can join our workspace [Melrose on Slack](https://melrose-midi.slack.com/).

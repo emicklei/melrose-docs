@@ -15,7 +15,7 @@ toc: true
 
 Music composition is both a creative process and one that follows many rules (chords, scales, patterns). Exploring variations and combinations can be done by playing instruments. With the availabilty of many digital instruments, both soft- and hardware, it is also possible to create music using digital programming methods. 
 
-Melrōse offers a fully human-centric approach to algorithmic composition of music. It defines a new programming language and includes a tool to play music by evaluating expressions in that langage. With Melrōse, exploring patterns in music is done by creating musical objects that can be played and changed at the same time.
+Melrōse offers a fully human-centric approach to algorithmic composition of music. It defines a new programming [language](/docs/reference/dsl/) and includes a tool to play music by evaluating expressions in that langage. With Melrōse, exploring patterns in music is done by creating musical objects that can be played and changed at the same time.
 
 
 ### Digital Audio Workstation (DAW)
@@ -26,7 +26,7 @@ There are many open-source and commercial products that provide synthesized soun
 
 ### Showcase
 
-See what others have created with Melrōse. [Showcases →](https://www.youtube.com/results?search_query=melr%C5%8Dse)
+See and hear what others have created with Melrōse. [Showcases →](https://www.youtube.com/results?search_query=melr%C5%8Dse)
 
 ## Contributing
 
@@ -34,4 +34,4 @@ Find out how to contribute to Melrōse. [Contributing →](https://github.com/em
 
 ## Help
 
-Get help on Melrōse. [Help →]({{< ref "how-to-update" >}})
+Get help on Melrōse. [Help →]({{< ref "troubleshooting" >}})
