@@ -1,5 +1,6 @@
 tags:
 - melrose
+- gcp_project_staticwebsites
 
 steps:
 - id: "install modules"
