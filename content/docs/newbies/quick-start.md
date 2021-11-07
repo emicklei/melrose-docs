@@ -1,6 +1,6 @@
 ---
 title: "Quick start"
-description: "Use the Melrōse Playground for getting started with Melrōse."
+description: "Use the online playground website for getting started with Melrōse."
 lead: "Use the playground for getting started with Melrōse."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2021-04-10T13:59:39+01:00
@@ -15,7 +15,7 @@ toc: true
 
 ## Requirements
 
-To use the playground, you need a browser that is [supporting WebMIDI →](https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess). At the time of writing, this includes both Chrome and Edge.
+To use the [Melrōse Playground →](https://play.melrōse.org), you need a browser that is [supporting WebMIDI →](https://developer.mozilla.org/en-US/docs/Web/API/MIDIAccess). At the time of writing, this includes both Chrome and Edge.
 
 In addition, you need a soft- or hardware synthesizer connected to your computer such that `melrōse` can send and receive MIDI messages.
 

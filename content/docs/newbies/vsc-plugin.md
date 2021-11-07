@@ -13,12 +13,9 @@ weight: 120
 toc: true
 ---
 
-### install
+### Install
 
 See [instructions →](https://marketplace.visualstudio.com/items?itemName=EMicklei.melrose-for-vscode) on how to install this plugin after you have installed Visual Studio Code.
-
-### edit
-
 This editor extension works with `.mel` and `.melrose` files.
 The syntax of the program uses the [Melrōse Lanugage →](/docs/reference/dsl/).
 
@@ -46,6 +43,8 @@ To explicitly inspect the value of an expression, use `cmd+2`.
 ### ⌘+k : Stop all sounds
 
 To stop sounds being played, including loops, use `cmd+k`.
+
+## Editing tips
 
 ### comment
 

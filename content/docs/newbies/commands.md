@@ -13,7 +13,7 @@ weight: 130
 toc: true
 ---
 
-{{< alert icon="💡" text="Commands are used in the terminal in which you started the melrose application" >}}
+{{< alert icon="💡" text="Commands are used in the terminal in which you started the melrose application. These are not available in the playground." >}}
 
 ## Help
 

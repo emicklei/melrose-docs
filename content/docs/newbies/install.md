@@ -13,7 +13,7 @@ weight: 120
 toc: true
 ---
 
-{{< alert icon="💡" text="Use Quick start to try out `melrose` without any installation" >}}
+{{< alert icon="💡" text="Use Quick start to try out melrōse without any installation." >}}
 
 ## Overview
 
