@@ -39,7 +39,7 @@
   weight = 15
 
 [[main]]
-  name = "Blog"
+  name = "Examples"
   url = "/blog/"
   weight = 20
 
