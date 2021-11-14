@@ -51,4 +51,4 @@ The symbol `-` is used to soften the note.
 The symbol `+` is used to emphasize the note.
 You can use up to 5 such symbols.
 
-See [Notation](notations.html) for a complete description of the syntax to create notes.
+See [Notation](/docs/reference/notations/#note) for a complete description of the syntax to create notes.
