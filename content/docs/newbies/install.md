@@ -28,13 +28,15 @@ A complete `melrose` installation on your PC requires:
 You can install the extension directly from your running Visual Studio Code Editor or by going to the [Marketplace published package →](https://marketplace.visualstudio.com/items?itemName=EMicklei.melrose-for-vscode)
 
 
-## Install Get Melrōse application from prebuild releases
+## Download prebuild Melrōse application (use at own risk)
 
 Microsoft Windows
-- https://github.com/emicklei/melrose-windows/releases
+
+- [windows releases](https://github.com/emicklei/melrose-windows/releases)
 
 Apple Mac
-- https://github.com/emicklei/melrose-osx/releases
+
+- [osx releases](https://github.com/emicklei/melrose-osx/releases)
 
 
 ## Install Melrōse from source
