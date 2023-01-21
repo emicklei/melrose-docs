@@ -35,7 +35,8 @@ Note names are case-insentivive but are always displayed in uppercase.
 | 1=       | 1=         | full rest
 | d+       | D+         | quarter D, octave 4, MezzoForte
 | 16.e#--  | 16.E#--    | sixteenth, E sharp, fraction x 1.5, Piano
-
+| 32f      | 32F        | thirtytwo F
+ 
 ```javascript
 n = note('c#5')
 ```
