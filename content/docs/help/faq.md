@@ -13,10 +13,11 @@ weight: 630
 toc: true
 ---
 
+## Need some help, want to share your work or have a question?
+
+Visit [Melrōse on Groups](https://groups.google.com/g/melrose-programming).
+
+
 ## Report a bug or suggest a feature?
 
-Create an issue at [Melrose on Github](https://github.com/emicklei/melrose).
-
-## Contact the creator?
-
-Send your question to ernest[dot]micklei[at]gmail[dot]com.
+Create an issue at [Melrōse on Github](https://github.com/emicklei/melrose).

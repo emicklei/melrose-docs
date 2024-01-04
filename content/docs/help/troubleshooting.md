@@ -13,4 +13,8 @@ weight: 620
 toc: true
 ---
 
+
+If you have questions about to using the tool and its language then visit [Melrōse on Groups](https://groups.google.com/g/melrose-programming).
+
+
 If you have found an issue with the tool then please report it using our [Issue tracker](https://github.com/emicklei/melrose/issues).
