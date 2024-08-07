@@ -39,7 +39,6 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#prob">prob</a>
 - <a href="#progression">progression</a>
 - <a href="#scale">scale</a>
-- <a href="#seq">seq</a>
 - <a href="#sequence">sequence (seq)</a>
 
 ## Composition functions
@@ -68,8 +67,6 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#octave">octave</a>
 - <a href="#octavemap">octavemap</a>
 - <a href="#onbar">onbar</a>
-- <a href="#pitch">pitch</a>
-- <a href="#pitchmap">pitchmap</a>
 - <a href="#print">print</a>
 - <a href="#random">random</a>
 - <a href="#repeat">repeat</a>
@@ -77,7 +74,6 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#resequence">resequence</a>
 - <a href="#reverse">reverse</a>
 - <a href="#rotate">rotate</a>
-- <a href="#scale_stepper">scale_stepper</a>
 - <a href="#stretch">stretch</a>
 - <a href="#tabs">tabs</a>
 - <a href="#track">track</a>
@@ -578,30 +574,6 @@ Play will send MIDI Note On, stop will send MIDI Note Off.
 onkey('c4',onoff('e')) // uses default input and default output MIDI device
 ```
 
-### pitch
-<a name="pitch"></a>
-Change the pitch with a delta of semitones.
-
-> transpose(semitones,sequenceable)
-	
-```javascript
-transpose(-1,sequence('c d e'))
-
-p = interval(-4,4,1)
-
-transpose(p,note('c'))
-```
-
-### pitchmap
-<a name="pitchmap"></a>
-Create a sequence with notes for which the order and the pitch are changed. 1-based indexing.
-
-> transposemap('int2int',object)
-	
-```javascript
-transposemap('1:-1,1:0,1:1',note('c')) // => B3 C D
-```
-
 ### play
 <a name="play"></a>
 Play all musical objects.
@@ -752,30 +724,6 @@ scale('e/m') // => E F G A B C5 D5
 scale('e_/m') // => E_ E G_ A_ B_ B D_5
 
 
-```
-
-### scale_stepper
-<a name="scale_stepper"></a>
-Similar to transpose but uses the scale of find the note(s).
-
-> scale_stepper(scale),integer,sequenceable)
-	
-```javascript
-scale_stepper(scale(1,'E_'),1,note('G')) // A_
-```
-
-### seq
-<a name="seq"></a>
-Create a Sequence using this <a href="/docs/reference/notations/#sequence">format</a>.
-
-> sequence('space-separated-notes')
-	
-```javascript
-sequence('c d e')
-
-sequence('(8c d e)') // => (8C D E)
-
-sequence('c (d e f) a =')
 ```
 
 ### sequence (seq)

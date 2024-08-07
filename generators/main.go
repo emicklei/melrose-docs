@@ -115,6 +115,10 @@ func main() {
 		if len(each.Description) == 0 {
 			continue
 		}
+		// skip alias entries
+		if each.Alias == k {
+			continue
+		}
 		title := k
 		if len(each.Alias) > 0 && each.Alias != title {
 			title = fmt.Sprintf("%s (%s)", k, each.Alias)
