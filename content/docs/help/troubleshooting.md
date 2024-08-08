@@ -1,9 +1,9 @@
 ---
-title: "Troubleshooting"
-description: "Solutions to common problems."
-lead: "Solutions to common problems."
+title: "Support"
+description: "Contribute by sharing your work or your blocking issues."
+lead: "Contribute by sharing your work or your blocking issues."
 date: 2020-11-12T15:22:20+01:00
-lastmod: 2020-11-12T15:22:20+01:00
+lastmod: 2024-08-08T15:22:20+01:00
 draft: false
 images: []
 menu: 
@@ -14,7 +14,11 @@ toc: true
 ---
 
 
-If you have questions about to using the tool and its language then visit [Melrōse on Groups](https://groups.google.com/g/melrose-programming).
+## Need some help, want to share your work or have a question?
+
+Visit [Melrōse Discussions](https://github.com/emicklei/melrose/discussions).
 
 
-If you have found an issue with the tool then please report it using our [Issue tracker](https://github.com/emicklei/melrose/issues).
+## Report a bug or suggest a feature?
+
+Create an issue at [Melrōse on Github](https://github.com/emicklei/melrose).
