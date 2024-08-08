@@ -13,7 +13,9 @@ weight: 120
 toc: true
 ---
 
-{{< alert icon="💡" text="Use [the Melrōse Playground](https://play.melrōse.org) to try out melrōse without any installation." >}}
+{{< alert icon="💡" text="Use the Melrōse Playground to try out melrōse without any installation." >}}
+
+Take me to that [playground](https://play.melrōse.org).
 
 ## Overview
 
@@ -28,7 +30,7 @@ A complete `melrose` installation on your PC requires:
 You can install the extension directly from your running Visual Studio Code Editor or by going to the [Marketplace published package →](https://marketplace.visualstudio.com/items?itemName=EMicklei.melrose-for-vscode)
 
 
-## Download prebuild Melrōse application
+## Download a prebuild application (binary)
 
 These are binaries that have been build for a particular operating system.
 Recent version of those operating systems require binaries to be signed to verify the content but they still allow you to bypass the security warnings. Creating signed binaries is not for free ; let me know if you want to donate to this project to make that happen.
