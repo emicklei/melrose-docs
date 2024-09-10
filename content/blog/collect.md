@@ -25,7 +25,7 @@ loop(c)
 
 Four sequences are created that play a nice combination of arpeggios.
 
-## line 6
+### line 6
 
 To create a collection, all sequences are composed in a `join`.
 The transformation is done using a `fraction` on top of a `resequence`.
