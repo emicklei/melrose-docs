@@ -49,7 +49,6 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#duration">duration</a>
 - <a href="#dynamic">dynamic</a>
 - <a href="#dynamicmap">dynamicmap</a>
-- <a href="#euclidean">euclidean</a>
 - <a href="#export">export</a>
 - <a href="#fraction">fraction</a>
 - <a href="#fractionmap">fractionmap</a>
@@ -93,6 +92,7 @@ Use "//" to add comment, either on a new line or and the end of an expression.
 - <a href="#bpm">bpm</a>
 - <a href="#channel">channel</a>
 - <a href="#device">device</a>
+- <a href="#euclidean">euclidean</a>
 - <a href="#key">key</a>
 - <a href="#knob">knob</a>
 - <a href="#loop">loop</a>
@@ -179,15 +179,11 @@ Collect will map each sequence of a collection using a function that references 
 > collect(collection,function-with-underscore)
 	
 ```javascript
-
-
-			j = join(sequence('C E G'),sequence('D F A'))
+j = join(sequence('C E G'),sequence('D F A'))
 
 			// uses the special variable named "_"
 
 			c = collect(j, transpose(1, _ ))
-
-		
 ```
 
 ### device
@@ -243,7 +239,7 @@ Euclidean creates a euclidean rythm generator.
 > euclidean(steps,beats,rotation,noteOrVariable)
 	
 ```javascript
-
+e = euclidean(12,4,0,sequence('c e g'))
 ```
 
 ### export
