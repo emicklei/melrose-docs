@@ -1,7 +1,7 @@
 ---
-title: "Introducing 'collect'"
-description: "Use collect to transform a collection of sequences using a replacement function"
-lead: "Use collect to transform a collection of sequences (requires v0.54+)."
+title: "Introducing 'map'"
+description: "Use map to transform a collection of sequences using a replacement function"
+lead: "Use map to transform a collection of sequences (requires v0.55+)."
 date: 2024-09-10T09:58:42+02:00
 lastmod: 2024-09-10T09:58:42+02:00
 draft: false
@@ -9,7 +9,7 @@ weight: 50
 contributors: []
 ---
 
-The function `collect` is used to create a composition by applying a transformation on each sequence in a collection.
+The function `map` is used to create a composition by applying a transformation on each sequence in a collection.
 
 {{< highlight javascript "linenos=table,linenostart=1" >}}
 a1 = sequence('G_3 D_ G_ A D_5 G_5')
@@ -17,7 +17,7 @@ a2 = sequence('D_3 A_3 D_ E A_ D_5')
 a3 = sequence('E3 B3 E A_ B E5 ')
 a4 = sequence('B2 G_3 B3 E_ G_ B')
 
-c = collect( join(a1,a3,a4,a2), fraction(8,resequence('1 4 2 4 3 6 5 4', _ )) )
+c = map( join(a1,a3,a4,a2), fraction(8,resequence('1 4 2 4 3 6 5 4', _ )) )
 loop(c)
 {{< / highlight >}}
 
