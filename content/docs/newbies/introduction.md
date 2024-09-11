@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 description: "Melrōse is a MIDI environment for creating (live) music."
-lead: "Melrōse is MIDI environment for creating (live) music."
+lead: "Melrōse is a MIDI environment for creating (live) music."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -15,7 +15,7 @@ toc: true
 
 Music composition is both a creative process and one that follows many rules (chords, scales, patterns). Exploring variations and combinations can be done by playing instruments. With the availabilty of many digital instruments, both soft- and hardware, it is also possible to create music using digital programming methods. 
 
-Melrōse offers a fully human-centric approach to algorithmic composition of music. It defines a new programming [language](/docs/reference/dsl/) and includes a tool to play music by evaluating expressions in that langage. With Melrōse, exploring patterns in music is done by creating musical objects that can be played and changed at the same time.
+Melrōse offers a more human-centric approach to algorithmic composition of music. It defines a new programming [language](/docs/reference/dsl/) and includes a tool to play music by evaluating expressions in that langage. With Melrōse, exploring patterns in music is done by creating musical objects that can be played and changed at the same time.
 
 
 ### Digital Audio Workstation (DAW)

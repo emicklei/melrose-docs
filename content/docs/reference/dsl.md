@@ -327,8 +327,6 @@ i = iterator(1,3,5,7,9)
 p = transpose(i,note('c'))
 
 lp = loop(p,next(i))
-
-		
 ```
 
 ### join
@@ -354,7 +352,7 @@ Creates a new join by mapping elements. 1-index-based mapping.
 ```javascript
 j = join(note('c'), sequence('d e f'))
 
-jm = joinmap('1 (2 3) 4',j) // => C = D =
+jm = joinmap('1 (2 3) 4',j) // => C (D E) F
 ```
 
 ### key
@@ -426,9 +424,9 @@ Map will collect tranformations of each sequence of a collection using a functio
 ```javascript
 j = join(sequence('C E G'),sequence('D F A'))
 
-			// uses the special variable named "_"
+// uses the special variable named "_"
 
-			c = map(j, transpose(1, _ ))
+c = map(j, transpose(1, _ ))
 ```
 
 ### merge
