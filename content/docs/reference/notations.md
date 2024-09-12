@@ -146,3 +146,17 @@ p = progression('c', 'ii V I') // Major C scale, (D F A) (G B D5) (C E G)
 ```javascript
 cs = chordsequence('c f g')
 ```
+
+## Tabs
+<a name="tabs"></a>
+
+Tablature (or tab for short) is a form of musical notation indicating instrument fingering or the location of the played notes rather than musical pitches -- Wikipedia.
+The `tabs` function is using the Guitar tablature.
+
+https://www.studybass.com/lessons/reading-music/how-to-read-bass-tab/
+
+
+| Notation    | Description
+|-------------|---
+| e3          | G2, note G on octave 2
+| 2a2++       | 2B2++, note B on octave 2, Forte, Halftone 
