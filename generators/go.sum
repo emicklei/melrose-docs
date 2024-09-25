@@ -5,5 +5,5 @@ github.com/emicklei/tre v1.7.0/go.mod h1:3e+DTVKARET1BwLFwOIJwgYLUtkN+X9XZT0JDnb
 github.com/expr-lang/expr v1.16.9 h1:WUAzmR0JNI9JCiF0/ewwHB1gmcGw5wW7nWt8gc6PpCI=
 github.com/expr-lang/expr v1.16.9/go.mod h1:8/vRC7+7HBzESEqt5kKpYXxrxkr31SaO8r40VO/1IT4=
 gitlab.com/gomidi/midi v1.21.0/go.mod h1:3ohtNOhqoSakkuLG/Li1OI6I3J1c2LErnJF5o/VBq1c=
-gitlab.com/gomidi/rtmididrv v0.15.0 h1:52Heco8Y3Jjcl4t0yDUVikOxfI8FMF1Zq+qsG++TUeo=
-gitlab.com/gomidi/rtmididrv v0.15.0/go.mod h1:p/6IL1LGgj7utcv3wXudsDWiD9spgAdn0O8LDsGIPG0=
+gitlab.com/gomidi/midi/v2/drivers/rtmididrv v0.15.0 h1:52Heco8Y3Jjcl4t0yDUVikOxfI8FMF1Zq+qsG++TUeo=
+gitlab.com/gomidi/midi/v2/drivers/rtmididrv v0.15.0/go.mod h1:p/6IL1LGgj7utcv3wXudsDWiD9spgAdn0O8LDsGIPG0=
