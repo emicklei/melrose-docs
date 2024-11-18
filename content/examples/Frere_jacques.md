@@ -1,3 +1,9 @@
+---
+title: "Frere_jacques"
+date: 2020-11-16
+draft: false
+---
+ Uses `track` to play sequences together, starting at given bars.
 
 ```javascript
 f1 = sequence('C D E C')

@@ -1,3 +1,12 @@
+---
+title: "Karmino"
+date: 2024-11-18
+draft: false
+---
+ Karmino
+
+- Logic Pro X, Luminous Tines
+- Analog Lab, Bells
 
 ```javascript
 it = iterator(6,1,4,-1) // delta semitones
