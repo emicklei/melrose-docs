@@ -28,7 +28,7 @@ Note names are case-insentivive but are always displayed in uppercase.
 | 2e5      | 2E5        | Halftone (2 x ¼), E octave 5
 | 1c       | 1C         | Full tone C, octave 4
 | f#       | F#, F♯     | F sharp
-| g_       | G_, G♭     | G flat
+| g_       | G_, G♭, Gb | G flat
 | .g       | .G         | duration fraction x 1.5 = 3/8
 | =        | =          | quarter rest
 | 2=       |            | half rest
