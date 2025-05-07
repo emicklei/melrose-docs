@@ -4,7 +4,7 @@ title: "Notation"
 description: "Musical object notations."
 lead: "Musical object notations."
 date: 2021-03-05T15:21:01+02:00
-lastmod: 2021-03-09T15:21:01+02:00
+lastmod: 2025-05-07T15:21:01+02:00
 draft: false
 images: []
 menu: 
@@ -70,6 +70,7 @@ n = note('e++')
 | C D E F        | 4 quarter tones
 | (8C E) (d5 f5) | 2 doublets; first doublet has an eight length, second is a quarter
 | (1C E G)    | C Chord; whole length
+| 8(A 16C5)   | same as (8A 8C5)
 
 ```javascript
 doremi = sequence('c d e')
