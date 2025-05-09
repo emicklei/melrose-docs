@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"sort"
 	"strings"
 	"text/template"
@@ -21,7 +22,7 @@ title: "Language"
 description: "All language functions grouped by creation,compostion and audio control."
 lead: "All language functions grouped by creation,compostion and audio control."
 date: 2021-03-05T12:21:01+02:00
-lastmod: 2021-03-05T12:21:01+02:00
+lastmod: 2025-05-09T12:21:01+02:00
 draft: false
 images: []
 menu: 
@@ -48,6 +49,12 @@ To delete a variable, assign it to the special value "nil".
 ### comment
 
 Use "//" to add comment, either on a new line or and the end of an expression.
+
+### programs
+
+Programs are composed of comment lines, assigments and expressions.
+Each must be separated by a newline or a semicolon ;.
+Large expressions may span multiple lines only when lines after the first are indented by a Tab or 4 Space characters.
 
 ## Creation functions
 {{range .Core}}
@@ -148,7 +155,7 @@ func main() {
 	sort.Slice(gf.Audio, func(i, j int) bool { return gf.Audio[i].Title < gf.Audio[j].Title })
 	sort.Slice(gf.All, func(i, j int) bool { return gf.All[i].Title < gf.All[j].Title })
 
-	name := "../content/docs/reference/dsl.md"
+	name := "../../content/docs/reference/dsl.md"
 	out, err := os.Create(name)
 	checkErr(err)
 	defer out.Close()
@@ -161,7 +168,8 @@ func main() {
 	tmpl.Parse(tmplSource)
 	err = tmpl.Execute(out, gf)
 	checkErr(err)
-	fmt.Println("generated:", name)
+	where, _ := filepath.Abs(name)
+	fmt.Println("generated:", where)
 }
 
 func checkErr(err error) {

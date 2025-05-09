@@ -1,0 +1,13 @@
+github.com/Try431/EasyMIDI v1.0.3 h1:SQ+HGlh7Ocn6kW93zv/oSJSQMsf4WKh2SK/mhcC8Guc=
+github.com/Try431/EasyMIDI v1.0.3/go.mod h1:G2Hh7MmGyph2YRKHBcfMeH78kmRGo1nwo0Gy9TkzdAc=
+github.com/djherbis/times v1.6.0 h1:w2ctJ92J8fBvWPxugmXIv7Nz7Q3iDMKNx9v5ocVH20c=
+github.com/djherbis/times v1.6.0/go.mod h1:gOHeRAz2h+VJNZ5Gmc/o7iD9k4wW7NMVqieYCY99oc0=
+github.com/emicklei/tre v1.7.0 h1:bEZhzT3o+9lcJ4KQh+uf0mv7rmMe0LEtVDa/7F5iq/c=
+github.com/emicklei/tre v1.7.0/go.mod h1:3e+DTVKARET1BwLFwOIJwgYLUtkN+X9XZT0JDnb+OYY=
+github.com/expr-lang/expr v1.16.9 h1:WUAzmR0JNI9JCiF0/ewwHB1gmcGw5wW7nWt8gc6PpCI=
+github.com/expr-lang/expr v1.16.9/go.mod h1:8/vRC7+7HBzESEqt5kKpYXxrxkr31SaO8r40VO/1IT4=
+gitlab.com/gomidi/midi/v2 v2.2.19 h1:/Ktpf21SIOX61gg8PJ7wYLSsD+dOU1e3z3tlO9OS+Zs=
+gitlab.com/gomidi/midi/v2 v2.2.19/go.mod h1:ENtYaJPOwb2N+y7ihv/L7R4GtWjbknouhIIkMrJ5C0g=
+golang.org/x/sys v0.0.0-20220615213510-4f61da869c0c/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.32.0 h1:s77OFDvIQeibCmezSnk/q6iAfkdiQaJi4VzroCFrN20=
+golang.org/x/sys v0.32.0/go.mod h1:BJP2sWEmIv4KK5OTEluFJCKSidICx8ciO85XgH3Ak8k=

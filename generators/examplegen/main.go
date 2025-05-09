@@ -12,13 +12,15 @@ import (
 	"github.com/djherbis/times"
 )
 
-var sampleDir = flag.String("m", "/Users/emicklei/Projects/github.com/emicklei/melrose-projects/public", "directory with sample scripts")
+var sampleDir = flag.String("m", "../../../melrose-projects/public", "directory with sample scripts")
 
-var docDir = flag.String("d", "/Users/emicklei/Projects/github.com/emicklei/melrose-docs/content/examples", "directory of generated documentation")
+var docDir = flag.String("d", "../../../content/examples", "directory of generated documentation")
 
 func main() {
 	flag.Parse()
-	matches, _ := filepath.Glob(filepath.Join(*sampleDir, "*.mel"))
+	where, _ := filepath.Abs(filepath.Join(*sampleDir, "*.mel"))
+	fmt.Println("scanning", where)
+	matches, _ := filepath.Glob(where)
 	for _, each := range matches {
 		generate(each)
 	}
@@ -41,11 +43,13 @@ func generate(fileName string) {
 	}
 	defer input.Close()
 
-	output, err := os.Create(filepath.Join(*docDir, title+".md"))
+	outputFile := filepath.Join(*docDir, title+".md")
+	output, err := os.Create(outputFile)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer output.Close()
+	fmt.Println("generating", outputFile)
 
 	scanner := bufio.NewScanner(input)
 	readingMeta := false
