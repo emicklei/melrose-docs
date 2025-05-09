@@ -1,9 +1,9 @@
 ---
 title: "MCP Server"
 description: "Tool to compose music using conversation in AI"
-lead: "Using mulitple drum loops to start and stop individually."
-date: 2026-05-09T29:53:58+01:00
-lastmod: 2026-05-09T29:53:58+01:00
+lead: "Tool to compose music using conversation in AI."
+date: 2025-05-09T29:53:58+01:00
+lastmod: 2025-05-09T29:53:58+01:00
 draft: false
 weight: 50 
 contributors: []
