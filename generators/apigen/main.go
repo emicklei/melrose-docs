@@ -36,7 +36,7 @@ toc: true
 
 ### Expressions
 
-Musical objects are created, composed and played using the <strong>melrõse</strong> tool by evaluating expressions.
+Musical objects are created, composed and played using the <strong>melrōse</strong> tool by evaluating expressions.
 Expressions use any of the predefined functions (creation,composition,audio control).
 By assigning an expression to a variable name, you can use that expression by its name to compose other objects.
 

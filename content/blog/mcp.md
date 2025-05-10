@@ -2,14 +2,15 @@
 title: "MCP Server"
 description: "Tool to compose music using conversation in AI"
 lead: "Tool to compose music using conversation in AI."
-date: 2025-05-09T29:53:58+01:00
-lastmod: 2025-05-09T29:53:58+01:00
+date: 2025-05-09T19:53:58+01:00
+lastmod: 2025-05-09T19:53:58+01:00
 draft: false
 weight: 50 
 contributors: []
 ---
 
-`melrose-mcp` is a (server) tool that uses the [MCP](https://modelcontextprotocol.io/) protocol to receive expressions to play.
+`melrose-mcp` is a tool that uses the [MCP](https://modelcontextprotocol.io/) protocol to receive `melrōse` expressions to play.
+You install this tool locally on your machine and connect it from an MCP client such as Claude Desktop, Goose, VSC etc.
 
 ### example
 
