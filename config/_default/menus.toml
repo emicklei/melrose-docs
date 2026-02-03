@@ -40,7 +40,7 @@
 
 [[main]]
   name = "Blog"
-  url = "/blog/"
+  url = "https://ernestmicklei.com/melrose/"
   weight = 20
 
 [[main]]
