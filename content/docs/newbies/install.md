@@ -13,10 +13,6 @@ weight: 120
 toc: true
 ---
 
-{{< alert icon="💡" text="Use the Melrōse Playground to try out melrōse without any installation." >}}
-
-Take me to that [playground](https://play.melrōse.org).
-
 ## Overview
 
 A complete `melrose` installation on your PC requires:

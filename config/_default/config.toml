@@ -5,9 +5,16 @@ enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
 languageCode = "en-US"
-paginate = 7
 rssLimit = 10
-googleAnalytics = "UA-2987987-18"
+
+[services]
+  [services.googleAnalytics]
+    # Set this to your GA4 measurement ID, e.g. G-XXXXXXXXXX.
+    # Legacy Universal Analytics (UA-*) is no longer supported.
+    ID = "G-5GES541MP3"
+
+[pagination]
+pagerSize = 7
 
 # add redirects/headers
 [outputs]
