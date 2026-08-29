@@ -12,4 +12,4 @@ new:
 	hugo new content content/blog/collect.md
 
 publish: build
-	gcloud storage rsync --recursive --checksums-only public gs://melrose.ernestmicklei.com
+	gcloud storage rsync --recursive --checksums-only public gs://xn--melrse-egb.org
