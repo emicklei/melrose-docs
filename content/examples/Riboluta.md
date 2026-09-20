@@ -1,6 +1,6 @@
 ---
 title: "Riboluta"
-date: 2021-10-04
+date: 2026-09-12
 draft: false
 ---
 - Logic: Micro Pulse

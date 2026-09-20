@@ -91,6 +91,7 @@ Large expressions may span multiple lines only when lines after the first are in
 - <a href="#ungroup">ungroup</a>
 - <a href="#value">value</a>
 - <a href="#velocitymap">velocitymap</a>
+- <a href="#volume">volume</a>
 
 ## Audio control functions
 
@@ -126,7 +127,7 @@ at(1,scale('e/m')) // => E
 <a name="bare"></a>
 Transforms the object into a simple basic sequence of notes without fractions,dynamics and rests.
 
-> bare(somevar,othervar)
+> bare(sequenceables)
 	
 ```javascript
 b = bare(sequence('.2F+++ =')) // => 2F
@@ -204,7 +205,7 @@ Creates a new modified musical object for which the dynamics of all notes are ch
 	The first parameter controls the emphasis the note, e.g. + (mezzoforte,mf), -- (piano,p) or a velocity [0..127].
 	.
 
-> dynamic(emphasis,object)
+> dynamic(emphasis,sequenceables)
 	
 ```javascript
 dynamic('++',sequence('e f')) // => E++ F++
@@ -216,7 +217,7 @@ dynamic(112,note('a')) // => A++++
 <a name="dynamicmap"></a>
 Changes the dynamic of notes from a musical object. 1-index-based mapping.
 
-> dynamicmap('mapping',object)
+> dynamicmap('mapping',sequenceables)
 	
 ```javascript
 dynamicmap('1:++,2:--',sequence('e f')) // => E++ F--
@@ -251,7 +252,7 @@ The first parameter controls the fraction of the note, e.g. 1 = whole, 2 = half,
 Fraction can also be an exact float value between 0 and 1.
 .
 
-> fraction(object,object)
+> fraction(object,sequenceables)
 	
 ```javascript
 fraction(8,sequence('e f')) // => 8E 8F , shorten the notes from quarter to eight
@@ -273,7 +274,7 @@ fractionmap('. 8 2',sequence('c e g')) // => .C 8E 2G
 <a name="group"></a>
 Create a new sequence in which all notes of a musical object are grouped.
 
-> group(sequenceable)
+> group(sequenceables)
 	
 ```javascript
 group(sequence('c d e')) // => (C D E)
@@ -311,7 +312,9 @@ Returns the current index of an object (e.g. iterator,interval,repeat).
 
 ### interval
 <a name="interval"></a>
-Create an integer repeating interval (from,to,by,method). Default method is 'repeat', Use next() to get a new integer.
+Create an integer repeating interval (from,to,by,method).
+	Available methods are 'repeat','once','repeat-two-way','once-two-way'.
+	Default method is 'repeat', Use next() to get a new integer.
 
 > interval(from,to,by)
 	
@@ -339,7 +342,7 @@ lp = loop(p,next(i))
 <a name="join"></a>
 Joins one or more musical objects as one.
 
-> join(first,second)
+> join(sequenceables)
 	
 ```javascript
 a = chord('a')
@@ -415,7 +418,7 @@ listen(device(1,rec),fun) // start a listener for notes from input device 1
 <a name="loop"></a>
 Create a new loop from one or more musical objects.
 
-> loop(object)
+> loop(sequenceables)
 	
 ```javascript
 cb = sequence('c d e f g a b')
@@ -441,7 +444,7 @@ c = map(j, transpose(1, _ ))
 <a name="merge"></a>
 Merges multiple sequences into one sequence.
 
-> merge(sequenceable)
+> merge(sequenceables)
 	
 ```javascript
 m1 = notemap('..!..!..!', note('c2'))
@@ -537,7 +540,7 @@ m2 = notemap('3 6 9', octave(-1,note('d2')))
 <a name="octave"></a>
 Change the pitch of notes by steps of 12 semitones for one or more musical objects.
 
-> octave(offset,sequenceable)
+> octave(offset,sequenceables)
 	
 ```javascript
 octave(1,sequence('c d')) // => C5 D5
@@ -547,7 +550,7 @@ octave(1,sequence('c d')) // => C5 D5
 <a name="octavemap"></a>
 Create a sequence with notes for which the order and the octaves are changed.
 
-> octavemap('int2int',object)
+> octavemap('int2int',sequenceables)
 	
 ```javascript
 octavemap('1:-1,2:0,3:1',chord('c')) // => (C3 E G5)
@@ -610,7 +613,7 @@ onkey('c4',onoff('e')) // uses default input and default output MIDI device
 <a name="play"></a>
 Play all musical objects.
 
-> play(sequenceable)
+> play(sequenceables)
 	
 ```javascript
 play(s1,s2,s3) // play s3 after s2 after s1
@@ -702,7 +705,7 @@ td = replace(tc, c, d) // c -> d in tc
 <a name="resequence"></a>
 Creates a modifier of sequence notes by index (1-based).
 
-> resequence('space-separated-1-based-indices',sequenceable)
+> resequence('space-separated-1-based-indices',sequenceables)
 	
 ```javascript
 s1 = sequence('C D E F G A B')
@@ -716,7 +719,7 @@ i2 = resequence('(6 5) 4 3 (2 1)',s1) // => (B A) G F (E D)
 <a name="reverse"></a>
 Reverse the (groups of) notes in a sequence.
 
-> reverse(sequenceable)
+> reverse(sequenceables)
 	
 ```javascript
 reverse(chord('a')) // (A D_5 E5)
@@ -726,7 +729,7 @@ reverse(chord('a')) // (A D_5 E5)
 <a name="rotate"></a>
 Rotates note(groups) in a sequence. count is negative for rotating left.
 
-> rotate(count,object)
+> rotate(count,sequenceables)
 	
 ```javascript
 rotate(-1,sequence('C E G')) // E G C
@@ -738,7 +741,7 @@ rotate(-1,sequence('C E G')) // E G C
 <a name="scale"></a>
 Create a Scale using this <a href="/docs/reference/notations/#scale">format</a>.
 
-> scale('scale-syntax')
+> scale('scale-syntax',repeated)
 	
 ```javascript
 
@@ -751,9 +754,9 @@ scale('e') // => E G_ A_ A B D_5 E_5
 
 scale('e/m') // => E F G A B C5 D5
 
-// E flat minor
+// E flat minor, 2 octaves
 
-scale('e_/m') // => E_ E G_ A_ B_ B D_5
+scale('e_/m',2) // => E_ E G_ A_ B_ B D_5 E_5 E5 G_5 A_5 B_5 B5 D_6
 
 
 ```
@@ -806,7 +809,7 @@ stop() // stop all playables
 <a name="stretch"></a>
 Stretches the duration of musical object(s) with a factor. If the factor < 1 then duration is shortened.
 
-> stretch(factor,object)
+> stretch(factor,sequenceables)
 	
 ```javascript
 stretch(2,note('c'))  // 2C
@@ -820,7 +823,7 @@ stretch(8,note('c'))  // C with length of 8 x 0.25 (quarter) = 2 bars
 <a name="sync"></a>
 Synchronise playing musical objects. Use play() for serial playing.
 
-> sync(object)
+> sync(sequenceables)
 	
 ```javascript
 sync(s1,s2,s3) // play s1,s2 and s3 at the same time
@@ -852,7 +855,7 @@ track("lullaby",1,onbar(2, sequence('c d e'))) // => a new track on MIDI channel
 <a name="transpose"></a>
 Change the pitch with a delta of semitones.
 
-> transpose(semitones,sequenceable)
+> transpose(semitones,sequenceables)
 	
 ```javascript
 transpose(-1,sequence('c d e'))
@@ -866,7 +869,7 @@ transpose(p,note('c'))
 <a name="transposemap"></a>
 Create a sequence with notes for which the order and the pitch are changed. 1-based indexing.
 
-> transposemap('int2int',object)
+> transposemap('int2int',sequenceables)
 	
 ```javascript
 transposemap('1:-1,1:0,1:1',note('c')) // => B3 C D
@@ -886,7 +889,7 @@ t = trim(1,2,sequence('c d e f a') // d e
 <a name="undynamic"></a>
 Set the dymamic to normal for all notes in a musical object.
 
-> undynamic(sequenceable)
+> undynamic(sequenceables)
 	
 ```javascript
 undynamic('A+ B++ C-- D-') // =>  A B C D
@@ -896,7 +899,7 @@ undynamic('A+ B++ C-- D-') // =>  A B C D
 <a name="ungroup"></a>
 Undo any grouping of notes from one or more musical objects.
 
-> ungroup(sequenceable)
+> ungroup(sequenceables)
 	
 ```javascript
 ungroup(chord('e')) // => E G B
@@ -918,12 +921,22 @@ Returns the current value of a variable.
 <a name="velocitymap"></a>
 Create a sequence with notes for which the order and the velocities are changed. Velocity 0 means no change.
 
-> velocitymap('int2int',object)
+> velocitymap('int2int',sequenceables)
 	
 ```javascript
 velocitymap('1:30,2:0,3:60',chord('c')) // => (C3--- E G5+)
 ```
 
+### volume
+<a name="volume"></a>
+Sets the MIDI velocity [0..127] of all notes in one or more musical objects.
+
+> volume(value,sequenceables)
+	
+```javascript
+volume(80,sequence('e f'))
+```
 
 
-##### generated by dsl-md.go on Aug 28, 2026
+
+##### generated by dsl-md.go on Sep 20, 2026

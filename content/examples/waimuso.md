@@ -1,6 +1,6 @@
 ---
 title: "Waimuso"
-date: 2020-04-27
+date: 2026-09-12
 draft: false
 ---
 	  Logic Pro X

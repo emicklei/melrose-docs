@@ -1,6 +1,6 @@
 ---
 title: "Karmino"
-date: 2024-11-18
+date: 2026-09-12
 draft: false
 ---
  Karmino

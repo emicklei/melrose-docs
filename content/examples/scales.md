@@ -1,6 +1,6 @@
 ---
 title: "Scales"
-date: 2020-05-09
+date: 2026-09-17
 draft: false
 ---
  Some comment
@@ -9,8 +9,8 @@ draft: false
 ```javascript
 bpm(120)
 
-e = join(scale('8G#2'),scale('8G#3'))
-sme2 = resequence('1 6 5 2 7 6 3 8 7 4 9 8 5 10 9 6 11 10',e)
+e = scale('8G2',2)
+sme2 = resequence('1 6 5 2 7 6 3 8 7 4 9 8 5 10 9 6 11 10 7 12 11 8 13 12 9 14 13',e)
 lp_sme2 = loop(sme2)
 
 

@@ -14,7 +14,7 @@ import (
 
 var sampleDir = flag.String("m", "../../../melrose-projects/public", "directory with sample scripts")
 
-var docDir = flag.String("d", "../../../content/examples", "directory of generated documentation")
+var docDir = flag.String("d", "../../content/examples", "directory of generated documentation")
 
 func main() {
 	flag.Parse()

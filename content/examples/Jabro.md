@@ -1,6 +1,6 @@
 ---
 title: "Jabro"
-date: 2022-03-13
+date: 2026-09-12
 draft: false
 ---
 

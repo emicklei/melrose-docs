@@ -16,7 +16,7 @@ toc: true
 
 ## Need some help, want to share your work or have a question?
 
-Visit [Melrōse Discussions](https://github.com/emicklei/melrose/discussions).
+Visit [Melrōse on Discord](https://discord.gg/G2hQ8pN8Z).
 
 
 ## Report a bug or suggest a feature?
