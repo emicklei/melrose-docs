@@ -1,0 +1,18 @@
+// drum patterns
+// https://docs.google.com/spreadsheets/d/19_3BxUMy3uy1Gb0V8Wc-TcG7q16Amfn6e8QVw4-HuD0/edit#gid=0
+// Synthetic Substitution part 2
+
+kick=note('c2')
+snare=note('e2')
+closehi=midi(4,42,72)
+openhi=midi(4,46,72)
+hibell=midi(4,53,72)
+lobell=midi(4,52,72)
+																
+drum15 = merge(
+    notemap('!.!....!.!!!...!',kick),
+    notemap('....!.......!...',snare),
+    notemap('!.!.!.!.!.!.!.!.',closehi),
+    notemap('..!.............',openhi))
+lp_drum15 = loop(channel(3,fraction(16,drum15)))
+// export("synthetic-part2.mid",fraction(16,drum15))

@@ -14,10 +14,3 @@ drum12 = channel(10,fraction(16,merge(
     notemap('1',openhi),
     notemap('16',note('=')))))
 loop(drum12)
-
-// It's a New Day
-drum16 = merge(
-    notemap('!.!.......!!...!',kick),
-    notemap('....!.......!...',snare),
-    notemap('..!.!.!.!.!.!.!.',closehi))
-lp_drum16 = loop(channel(10,fraction(16,drum16)))
