@@ -1,0 +1,1 @@
+Use 'make build' to verify the generation of the site.

@@ -61,6 +61,18 @@ body.dark .toggle-dark {
   }
 }
 
+.copy-source {
+  margin: -1.25rem 0 1rem;
+  text-align: right;
+}
+
+.btn-clipboard.btn-copy-source {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem;
+  line-height: 1;
+}
+
 .copy-status::after,
 .copy-status:hover::after {
   content: "Copy";

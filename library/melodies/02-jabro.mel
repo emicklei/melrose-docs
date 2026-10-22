@@ -1,14 +1,8 @@
----
-title: "Jabro"
-date: 2026-09-12
-draft: false
----
+ // Jabro by Nil Zork
+ // Ableton: June O Pad
+ // Wavestation: Five On It Bells
+ // Analog Lab V: Bouncy Bells
 
- - Ableton: June O Pad
- - WS: Five On It Bells
- - Analog Lab V: Bouncy Bells
-
-```javascript
 bpm(120)
 s1 = sequence('a2 e3 c# e3 a2 e3 c#')
 s2 = sequence('b2 f#3 d f#3 b2 f#3 d')
@@ -23,4 +17,3 @@ j2 = fraction(8,join(j1,cstep,j1,cstep))
 lp_j2 = loop(dynamic('--',j2))
 
 // export('19-jabro.mid', lp_j2)
-```

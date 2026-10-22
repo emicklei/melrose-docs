@@ -41,3 +41,82 @@ pre code {
     border-radius: 0;
   }
 }
+
+/** Simple JavaScript highlighting for Library source blocks (Chroma classes) */
+.mel-source .chroma {
+  .c,
+  .c1,
+  .cm {
+    color: #6a737d;
+    font-style: italic;
+  }
+
+  .k,
+  .kc,
+  .kd,
+  .kr {
+    color: #d73a49;
+  }
+
+  .s,
+  .s1,
+  .s2,
+  .sb {
+    color: #032f62;
+  }
+
+  .m,
+  .mi,
+  .mf {
+    color: #005cc5;
+  }
+
+  .nx {
+    color: #24292e;
+  }
+
+  .o {
+    color: #d73a49;
+  }
+
+  .p {
+    color: #586069;
+  }
+}
+
+body.dark .mel-source .chroma {
+  .c,
+  .c1,
+  .cm {
+    color: #8b949e;
+  }
+
+  .k,
+  .kc,
+  .kd,
+  .kr,
+  .o {
+    color: #ff7b72;
+  }
+
+  .s,
+  .s1,
+  .s2,
+  .sb {
+    color: #a5d6ff;
+  }
+
+  .m,
+  .mi,
+  .mf {
+    color: #79c0ff;
+  }
+
+  .nx {
+    color: #c9d1d9;
+  }
+
+  .p {
+    color: #8b949e;
+  }
+}

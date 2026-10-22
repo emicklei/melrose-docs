@@ -1,11 +1,5 @@
----
-title: "Frere_jacques"
-date: 2026-09-12
-draft: false
----
- Uses `track` to play sequences together, starting at given bars.
+// Uses `track` to play sequences together, starting at given bars.
 
-```javascript
 f1 = sequence('C D E C')
 f2 = sequence('E F 2G')
 f3 = sequence('8G 8A 8G 8F E C')
@@ -17,4 +11,3 @@ track('frere',1,
     onbar(1,v1),
     onbar(3,v1),
     onbar(5,v1))
-```

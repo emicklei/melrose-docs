@@ -28,6 +28,18 @@
   identifier = "advanced"
   url = "/tutorial/advanced/"
 
+[[library]]
+  name = "Melodies"
+  weight = 10
+  identifier = "melodies"
+  url = "/library/melodies/"
+
+[[library]]
+  name = "Drums"
+  weight = 20
+  identifier = "drums"
+  url = "/library/drums/"
+
 [[main]]
   name = "Docs"
   url = "/docs/newbies/introduction/"
@@ -39,14 +51,14 @@
   weight = 15
 
 [[main]]
+  name = "Library"
+  url = "/library/"
+  weight = 18
+
+[[main]]
   name = "Blog ↗"
   url = "https://ernestmicklei.com/melrose/"
   weight = 20
-
-[[main]]
-  name = "Examples"
-  url = "/examples/"
-  weight = 20  
 
 # [[social]]
 #   name = "Twitter"

@@ -1,0 +1,23 @@
+// drum patterns
+// https://docs.google.com/spreadsheets/d/19_3BxUMy3uy1Gb0V8Wc-TcG7q16Amfn6e8QVw4-HuD0/edit#gid=0
+// Walk this Way
+
+kick=note('c2')
+snare=note('e2')
+closehi=note('g#2')
+openhi=note('a#2')
+
+drum12 = channel(10,fraction(16,merge(
+    notemap('!......!!.!....',kick),
+    notemap('....!.......!..',snare),
+    notemap('..!.!.!.!.!.!.!',closehi),
+    notemap('1',openhi),
+    notemap('16',note('=')))))
+loop(drum12)
+
+// It's a New Day
+drum16 = merge(
+    notemap('!.!.......!!...!',kick),
+    notemap('....!.......!...',snare),
+    notemap('..!.!.!.!.!.!.!.',closehi))
+lp_drum16 = loop(channel(10,fraction(16,drum16)))

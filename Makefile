@@ -1,6 +1,7 @@
 gen:
 	cd generators/apigen && go run .
 	cd generators/examplegen && go run .
+	cd generators/libgen && go run .
 
 run:
 	npm run start
