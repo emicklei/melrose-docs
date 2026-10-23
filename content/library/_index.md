@@ -19,9 +19,15 @@ Each sample includes a Melrōse expression you can copy into the editor and play
 
 ## Melodies
 
+Free scripts to use, change and extend by any music programmer of Melrōse.
+
 ## Drums
 
+Scripts that demonstrate how create drum patterns and play them using various instruments.
+
 ## Remakes
+
+Scripts that have parts of well-known, famous melodies created by commercial artists.
 
 Melrōse sends MIDI to your connected instrument or DAW.
 See the [Docs](/docs/newbies/introduction/) for help getting started.
