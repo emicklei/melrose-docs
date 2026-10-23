@@ -1,0 +1,13 @@
+// Schindler's List - Hans Zimmer
+// Ableton - Orchestral Sweep Pad
+// Garageband - Luminous Sweep Pad, Mellow Poly
+
+bpm(50)
+
+s1 = sequence('a3 8a 8d 8a 8d 8b_ 8a 8f 8a3 8f 8g3 8f 8g 2a')
+s2 = fraction(8,sequence('a d a d c5 b_ a g c b_3 e g b_ a g f'))
+s3 = sequence('8g 8b_3 8g 8b_3 8a 8g 8f 8g 2.a')
+s4 = sequence('a3 8g 8b_3 8g 8b_3 8a 8g 8f 8e 2d 2e')
+s5 = sequence('8f 8b_3 8f 8b_3 8a 8g 8f 8e 2.d =')
+
+loop(s1,s2,s3,s4,s5)

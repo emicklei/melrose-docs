@@ -1,6 +1,6 @@
 ---
 title: "Library"
-description: "Melody and drum samples for Melrōse."
+description: "Melody samples, drum patterns, and remakes for Melrōse."
 lead: "Explore musical ideas to use in your own compositions."
 draft: false
 type: docs
@@ -15,11 +15,13 @@ cascade:
 ---
 
 Browse the Library using the sections on the left.
-Each sample includes a Melrose expression you can copy into the editor and play.
+Each sample includes a Melrōse expression you can copy into the editor and play.
 
 ## Melodies
 
 ## Drums
 
-Melrose sends MIDI to your connected instrument or DAW.
+## Remakes
+
+Melrōse sends MIDI to your connected instrument or DAW.
 See the [Docs](/docs/newbies/introduction/) for help getting started.

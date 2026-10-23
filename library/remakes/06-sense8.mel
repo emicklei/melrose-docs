@@ -1,0 +1,15 @@
+// Sense8 - Main Theme
+// Translated by Ernest Micklei using Melrōse
+// Garageband: Bright Synth Strings, 80s Wave Bells
+
+bpm(120)
+s1 = fraction(2,sequence('(g2 d3 g3 b3)'))
+s2 = fraction(0.375,sequence('(a2 e2 a3 c#)'))
+s3 = fraction(2,sequence('(a#2 f3 b_3 d)'))
+s4 = fraction(2,sequence('(d#2 a#2 d#3 g3 b_3)'))
+s5 = fraction(0.375,sequence('(f2 c3 f3 a3 c)'))
+s6 = fraction(1,sequence('(f#2 c#3 f#3 b_3 c#)'))
+theme = join(s1,s1,s2,s3,fraction(1,s3),s4,s4,s5,s6)
+loop(theme)
+
+// export('39-sense8',theme)

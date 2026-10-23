@@ -1,0 +1,21 @@
+// -----------------------------------------------------------
+// Mike Oldfield - Tubular Bells (Opening Theme in 15/8)
+// -----------------------------------------------------------
+// Garageband: FM Piano
+
+// 1. Set the tempo (approx. 144-150 BPM for eighth notes)
+bpm(144)
+
+// 2. Define the first phrase: 7/8 measure (14 eighth notes)
+// '8' sets the duration fraction to an eighth note (1/8).
+// Octave 4 is default, 'c5' and 'd5' jump to the 5th octave.
+part1 = fraction(8,sequence('e a e b e g a e c5 e d5 e b c5'))
+
+// 3. Define the second phrase: 8/8 measure (16 eighth notes)
+// Ends with the extra two eighth notes (e, b) that complete the 15/8 cycle
+part2 = fraction(8,sequence('e a e b e g a e c5 e d5 e b c5 e b'))
+
+// 4. Combine both phrases into the full 30-note 15/8 motif
+tubular_theme = join(part1, part2)
+
+loop(tubular_theme)

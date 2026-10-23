@@ -1,0 +1,11 @@
+// Jim Knopf and Lucas the Engine Driver
+// Music by Michael Ende
+// Translated by Ernest Micklei using Melrōse
+// Garageband: Square Bells
+
+bpm(120)
+s1 = sequence('.c5 8b_ a_ e_ c-- e_-- a_-- =')
+s2 = sequence('.d_5 8c5 b_ f d_-- f-- b_-- =')
+s3 = sequence('.b_ 8a_ g e_ b_3-- e_-- g-- =')
+line = stretch(0.5,join(s1,s1,s2,s2,s3,s3,s1,s1))
+loop(line)

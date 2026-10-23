@@ -40,6 +40,12 @@
   identifier = "drums"
   url = "/library/drums/"
 
+[[library]]
+  name = "Remakes"
+  weight = 30
+  identifier = "remakes"
+  url = "/library/remakes/"
+
 [[main]]
   name = "Docs"
   url = "/docs/newbies/introduction/"

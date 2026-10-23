@@ -17,7 +17,7 @@ var docDir = flag.String("d", "../../content/library", "directory of generated d
 
 var templateFile = flag.String("t", "library-template.md", "template for each generated markdown file")
 
-var sections = []string{"drums", "melodies"}
+var sections = []string{"drums", "melodies", "remakes"}
 
 type page struct {
 	Title    string
