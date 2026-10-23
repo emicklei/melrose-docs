@@ -10,6 +10,7 @@ weight: 10
 <li>-----------------------------------------------------------</li>
 <li>Mike Oldfield - Tubular Bells (Opening Theme in 15/8)</li>
 <li>-----------------------------------------------------------</li>
+<li>Garageband: FM Piano</li>
 </ul>
 
 <div class="mel-source">
@@ -18,6 +19,7 @@ weight: 10
 // -----------------------------------------------------------
 // Mike Oldfield - Tubular Bells (Opening Theme in 15/8)
 // -----------------------------------------------------------
+// Garageband: FM Piano
 
 // 1. Set the tempo (approx. 144-150 BPM for eighth notes)
 bpm(144)
@@ -34,13 +36,7 @@ part2 = fraction(8,sequence('e a e b e g a e c5 e d5 e b c5 e b'))
 // 4. Combine both phrases into the full 30-note 15/8 motif
 tubular_theme = join(part1, part2)
 
-// 5. (Optional) Define the subtle low bass accompaniment (A minor -> G)
-// 2-beat half notes (2) and whole rests (=) to anchor the 15/8 cycle
-bass_riff = sequence('2a2 2a2 2g2 2g2 1=')
-
-// 6. Play the motif in a continuous loop
 loop(tubular_theme)
-loop(bass_riff)
 ```
 
 </div>
