@@ -16,6 +16,7 @@ cascade:
 
 Browse the Library using the sections on the left.
 Each sample includes a Melrōse expression you can copy into the editor and play.
+See the [Docs](/docs/newbies/introduction/) for help getting started.
 
 ## Melodies
 
@@ -28,6 +29,3 @@ Scripts that demonstrate how create drum patterns and play them using various in
 ## Remakes
 
 Scripts that have parts of well-known, famous melodies created by commercial artists.
-
-Melrōse sends MIDI to your connected instrument or DAW.
-See the [Docs](/docs/newbies/introduction/) for help getting started.
