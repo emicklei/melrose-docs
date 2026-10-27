@@ -1,0 +1,13 @@
+// Myonak by Nil Zork
+// Logic: Tech House Vibes
+// Ableton: Airlite
+
+bpm(100)
+
+s1=sequence('g d#5 d#5 d5 c5 b c5 d5')
+s2=sequence('g f5 f5 d#5 d5 c5 d5 d#5')
+s3=sequence('a# g5 g5 f5 d#5 d5 d#5 f5')
+s4=sequence('a# f5 f5 d#5 d5 c5 d5 d#5')
+
+f1 = fraction(8,join(s1,s2,s3,s4))
+loop(f1)

@@ -1,0 +1,23 @@
+// Dr. Dre ft. Snoop Dogg – "Still D.R.E."
+// Garageband: FM Piano
+
+bpm(93)
+
+// 8 syncopated hits on A minor, followed by 3 on E minor and 5 on B minor
+hit_am = sequence('8(a4 c5 e5)')
+hit_em = sequence('8(g4 b4 e5)')
+hit_bm = sequence('8(f#4 b4 d5)')
+
+bar = join(
+    hit_am, hit_am, hit_am, hit_am, hit_am, hit_am, hit_am, hit_am,
+    hit_em, hit_em, hit_em,
+    hit_bm, hit_bm, hit_bm, hit_bm, hit_bm
+)
+
+// Bass groove underneath
+bass = sequence('4.a2 8= 4.a2 8= 4.e2 8= 4.b2 8=')
+
+l1 = loop(channel(1, bar))
+l2 = loop(channel(2, bass))
+
+sync(l1, l2)

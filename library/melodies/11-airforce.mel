@@ -1,0 +1,10 @@
+// Airforce by Nil Zork
+// Analog Lab Pro: Blue Bells
+// Garageband: Dreamy Bells
+
+bpm(140)
+
+p1 = iterator(0,-2,1)
+b0 = fraction(8,sequence('f# c#5 f#5 d a d5 a3 e a c# g# c#5'))  
+b1 = pitch(p1,b0)
+l1 = loop(b1,next(p1))

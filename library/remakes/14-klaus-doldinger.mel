@@ -1,0 +1,8 @@
+// Klaus Doldinger - Unknown Track
+// Analog Lab Pro: Horn Ens + Reverb
+
+bpm(200)
+s = seq('.a d5 8.c#5 8d5 b g5 f#5 e5 a5 8= .a5 .=')
+t = seq('.b5 g5 .f#5 .e5 d5 = .c#5 d5 2f#5 .e5 8= 2c#5 b =')
+
+loop(join(s,t))

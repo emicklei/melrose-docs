@@ -1,0 +1,16 @@
+// Insight XVIII by Jean Michel Blais
+// Garageband: Massive Trance Pad
+
+bpm(70)
+
+t1 = seq('(C#3 G#3 C# E G# E5)') // chord('c#/m')
+t2 = seq('(D#3 B3 D# F# B F#5)')
+
+t3 = seq('(E3 B3 E G# B G#5)')
+t4 = seq('(F#3 C# F# A C#5 A5)')
+t5 = seq('(B2 F#3 B3 D# F# D#5)')
+t6 = seq('(A2 E3 A3 C# E C#5)')
+t7 = seq('(G#2 D#3 G#3 C D# C5)')
+
+tall = join(t1, t2, t3, stretch(2,t4), stretch(2,t5), t1, t5, t6, stretch(2,t7))
+lp_tall = loop(tall)

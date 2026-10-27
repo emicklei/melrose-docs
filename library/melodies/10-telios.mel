@@ -1,0 +1,11 @@
+// Telios by Nil Zork
+//
+
+bpm(140)
+
+s1 = sequence('c3# g3# c# e g# c5#')
+s2 = sequence('e3 b3 e g# b e5')
+s3 = sequence('f3# c# f# a c#5 f#5')
+s4 = sequence('b2 f3# b3 d# f# b')
+
+loop(fraction(8,join(s1,s3,s2,s4)))

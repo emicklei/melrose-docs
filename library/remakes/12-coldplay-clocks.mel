@@ -1,0 +1,20 @@
+// Coldplay - Clocks
+// GarageBand: High Rise Pluck
+
+bpm(131)
+
+// 3+3+2 arpeggiated groupings
+bar_eb  = sequence('8eb5 8bb4 8g4  8eb5 8bb4 8g4  8eb5 8bb4')
+bar_bbm = sequence('8db5 8bb4 8f4  8db5 8bb4 8f4  8db5 8bb4')
+bar_fm  = sequence('8c5  8ab4 8f4  8c5  8ab4 8f4  8c5  8ab4')
+
+// The full 4-bar riff (Bbm plays twice)
+clocks_riff = join(bar_eb, bar_bbm, bar_bbm, bar_fm)
+
+// Bass roots
+bass_riff = sequence('1eb2 1bb1 1bb1 1f2')
+
+l1 = loop(channel(1, clocks_riff))
+l2 = loop(channel(2, bass_riff))
+
+sync(l1, l2)

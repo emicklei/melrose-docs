@@ -1,0 +1,12 @@
+// Syndulla by Nil Zork
+// Analog V: Falling Pad
+// Garageband: Warm Arp Pad
+
+bpm(120)
+
+s1 = sequence('8c5 8e_5 8g5 8e_5 8f5 8b_ 8d5 8f5')
+s2 =  sequence('8g 8b_ 8d5 8b_ 8e_5 8a_ 8c5 8e_5')
+s3 = join(s1,s2)
+s4 = transpose(-7,s3)
+
+loop(s3,s4, note('='))
