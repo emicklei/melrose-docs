@@ -1,0 +1,17 @@
+// Finale SongWriter 2012 Percussion Maps Reference
+// https://usermanuals.finalemusic.com/SongWriter2012Win/Content/PercussionMaps.htm
+
+bpm(85)
+
+open = midi(16,46,60)
+close = midi(16,42,60)
+clap = midi(16,39,60)
+kick = midi(16,36,80)
+
+d1 = notemap('..!......!!.....',open)
+d2 = notemap('...!.......!....',close)
+d3 = notemap('....!.......!...',clap)
+d4 = notemap('!!.!..!.!!.!..!.',kick)
+ds = channel(10,merge(d1,d2,d3,d4))
+
+lp_ds = loop(ds)
