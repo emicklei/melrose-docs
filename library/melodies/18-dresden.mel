@@ -1,0 +1,11 @@
+// Dresden by Nil Zork
+// Analog Lab Pro: Wet Pluck, 80's FM EP
+
+s1 = sequence('.e 8e e_ e d_ e a')
+s2 = sequence('.a 8a a_ a d_5 a g_')
+s3 = sequence('.g_ 8g_ e g_ e_ e g_')
+s4 = sequence('.a_ 8a_ g_ a e_ g_ e')
+r = note('=')
+j = stretch(0.5,join(s1,r,s2,r,s3,r,s4,r))
+it = interval(-4,4,1)
+lj = loop(pitch(it,j),next(it))

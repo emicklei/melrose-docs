@@ -1,4 +1,6 @@
-// Analog Lab, 
+// Risorante by Nil Zork
+// Analog Lab:
+
 bpm(120)
 r1 = sequence('f d_5 d_5 c5 b_ a b_ c5')
 r2 = sequence('f e_5 e_5 d_5 c5 b_ c5 d_5')

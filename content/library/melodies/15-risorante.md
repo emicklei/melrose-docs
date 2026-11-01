@@ -7,13 +7,16 @@ weight: 150
 ---
 
 <ul>
-<li>Analog Lab,</li>
+<li>Risorante by Nil Zork</li>
+<li>Analog Lab:</li>
 </ul>
 
 <div class="mel-source">
 
 ```javascript
-// Analog Lab, 
+// Risorante by Nil Zork
+// Analog Lab:
+
 bpm(120)
 r1 = sequence('f d_5 d_5 c5 b_ a b_ c5')
 r2 = sequence('f e_5 e_5 d_5 c5 b_ c5 d_5')
