@@ -1,0 +1,30 @@
+// Kamicros by Nil Zork
+// Ableton: FM Piano5
+// Multi channel
+
+bpm(120)
+
+s1 = sequence('> g b_ e_5 e_ b_ e_5 <')
+s2 = sequence('> g b_ d5 d b_ d5 <')
+s3 = sequence('> c g c5  e_ g  c5 <')
+s4 = sequence('> f c5 f5 b_  c5 f5 <')
+
+j1 = join(
+    repeat(2,fraction(8,s1)),
+    repeat(2,fraction(8,s2)),
+    repeat(2,fraction(8,s3)),
+    repeat(2,fraction(8,s4))
+    )
+
+loop(channel(1,j1))
+
+// set('midi.out',1)
+
+b1 = repeat(2,octave(-1,sequence('.g .e_')))
+b2 = repeat(2,octave(-1,sequence('.g .d'))) 
+b3 = repeat(2,octave(-1,sequence('.c .e_')))
+b4 = repeat(2,octave(-1,sequence('.f .b_')))
+
+j2 = join(b1,b2,b3,b4)
+
+loop(channel(2,j2))

@@ -1,0 +1,14 @@
+// On Meanie Jillie Beat by Nil Zork
+// Korg Wavestation: Meanie Jillie Beat
+
+bpm(128)
+
+g2 = chord('g/m/2')
+d5 = chord('d5')
+c5 = chord('c5/m')
+g1 = chord('g/m/1')
+
+rh = stretch(8,join(g2,d5,c5,g1))
+lh = stretch(4,sequence('g3 g3 d3 d3 c3 c3 g3 g3'))
+
+merge(lh,rh)
