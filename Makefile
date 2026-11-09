@@ -1,6 +1,5 @@
 gen:
 	cd generators/apigen && go run .
-	cd generators/examplegen && go run .
 	cd generators/libgen && go run .
 
 run:
@@ -8,9 +7,6 @@ run:
 
 build:
 	npm run build
-
-new:
-	hugo new content content/blog/collect.md
 
 publish: build
 	gcloud storage rsync --recursive --checksums-only public gs://xn--melrse-egb.org
