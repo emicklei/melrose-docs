@@ -24,9 +24,12 @@ Melrōse itself does not produce any sound.
 Instead, it sends MIDI messages to connected hardware or software, such as a DAW.
 There are many open-source and commercial products that provide synthesized sounds for many software instruments such as LMMS, Logic Pro, Ableton, Garageband, FL Studio.
 
+<img src="/images/melrose-port-daw.png" alt="DAW" style="max-width: 100%; height: auto;">
+
+
 ### Showcase
 
-See and hear what others have created with Melrōse. [Showcases →](https://www.youtube.com/results?search_query=melr%C5%8Dse)
+See and hear what others have created with Melrōse. [Showcases on Youtube →](https://www.youtube.com/results?search_query=melr%C5%8Dse)
 
 ## Contributing
 
